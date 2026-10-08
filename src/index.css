@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  --color-navy-deep: #000D13;
+  --color-navy-card: #051821;
+  --color-navy-elevated: #092432;
+  --color-gold-champagne: #CBB890;
+  --color-gold-hover: #B8A377;
+  --color-canvas-warm: #FAF9F6;
+  --color-canvas-subtle: #F4EFEA;
+  --color-stone-ink: #1A2128;
+  --color-stone-secondary: #4D5761;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--color-canvas-warm);
+  color: var(--color-stone-ink);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Classes */
+.font-heading, .font-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+.tracking-architectural {
+  letter-spacing: 0.14em;
+}
+
+.transition-luxury {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Image Zoom Effect */
+.image-zoom-container {
+  overflow: hidden;
+}
+
+.image-zoom-container img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-zoom-container:hover img {
+  transform: scale(1.04);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000D13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBB890;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8A377;
+}
+
+/* Selection */
+::selection {
+  background-color: #CBB890;
+  color: #000D13;
+}
