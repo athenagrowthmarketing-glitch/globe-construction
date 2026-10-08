@@ -1,0 +1,28 @@
+# Globe Construction
+
+> Licensed Florida General Contractor specializing in high-value residential remodeling and structural additions across Odessa, Pasco County, and the greater Tampa Bay metropolitan area.
+
+## Company Identity
+- **Brand Name:** Globe Construction
+- **Legal Entity:** Globe Group Construction LLC (Florida Sunbiz: L26000095271)
+- **Direct Phone:** +1 (813) 394-4528
+- **Direct Email:** globegroupfl@gmail.com
+- **Headquarters/Primary Service Hub:** Odessa, FL 33556 (Pasco County)
+- **Instagram:** https://www.instagram.com/globeconstructionfl
+- **Verified Rating:** 5.0 Stars (29+ verified reviews)
+
+## Primary Specializations (Tier 1)
+- **Kitchen Remodeling:** Waterfall quartz islands, floor-to-ceiling custom millwork, load-bearing wall removal, open-concept conversions, appliance integration (Sub-Zero, Wolf, Thermador), under-cabinet architectural LED illumination.
+- **Bathroom Remodeling:** Spa-grade wet rooms, curbless walk-in showers with concealed linear drains, freestanding soaking tubs, double custom floating vanities, 24-hour flood-tested Schluter waterproofing.
+- **Full Home Remodeling:** Whole-house architectural floorplan re-engineering, double-height great rooms, slat fireplace accent walls, luxury walk-in closets, entertainer wet bars, cohesive tile/hardwood flooring transitions.
+
+## Secondary Capabilities (Tier 2)
+- **Home Additions:** Engineered CBS concrete block structural expansions, master suite wings, covered lanais, Florida hurricane wind-load compliance (140+ MPH).
+- **Commercial Remodeling:** Boutique creative galleries, executive conference suites, tenant improvements (TI), light steel framing, Level 5 drywall, ADA accessibility compliance.
+
+## Service Areas
+- **Primary Market:** Odessa (33556), Trinity, Wesley Chapel, New Port Richey, Land O' Lakes (Pasco County).
+- **Secondary Market:** Tampa, South Tampa, Westchase, Brandon, Riverview, Plant City (Hillsborough County); Clearwater, St. Petersburg, Palm Harbor, Safety Harbor (Pinellas County); Spring Hill, Brooksville (Hernando County); Sarasota, Lakewood Ranch (Sarasota/Manatee Counties).
+
+## Online Estimate & Inquiries
+- Free consultation form available at: https://site-globe-self.vercel.app/

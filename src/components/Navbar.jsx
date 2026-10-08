@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Phone, ChevronDown, Menu, X, ArrowRight, Shield } from 'lucide-react';
+import { scrollToEstimate } from '../utils/scroll';
 
-export default function Navbar({ onOpenEstimate }) {
+export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,34 +25,47 @@ export default function Navbar({ onOpenEstimate }) {
     {
       title: 'Kitchen Remodeling',
       desc: 'Waterfall islands, custom cabinetry & open layouts',
-      href: '#kitchens',
+      href: '/kitchen-remodeling',
       tag: 'Primary Focus',
     },
     {
       title: 'Bathroom Remodeling',
       desc: 'Spa wet rooms, curbless showers & freestanding tubs',
-      href: '#bathrooms',
+      href: '/bathroom-remodeling',
       tag: 'Spa Luxury',
     },
     {
       title: 'Full Home Remodeling',
       desc: 'Whole-house architectural cohesion & floorplan redesign',
-      href: '#full-home',
+      href: '/full-home-remodeling',
       tag: 'Whole Residence',
     },
     {
       title: 'Home Additions',
       desc: 'Structural extensions, master suites & covered lanai living',
-      href: '#additions',
+      href: '/home-additions',
       tag: 'Structural CBS',
     },
     {
       title: 'Commercial Remodeling',
       desc: 'Boutique offices, ateliers, retail & executive buildouts',
-      href: '#commercial',
+      href: '/commercial-remodeling',
       tag: 'Commercial',
     },
   ];
+
+  const handleNavClick = (hash) => {
+    setMobileMenuOpen(false);
+    if (location.pathname !== '/') {
+      window.location.href = `/${hash}`;
+    } else {
+      const id = hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
 
   return (
     <header
@@ -61,7 +77,7 @@ export default function Navbar({ onOpenEstimate }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#home" className="flex items-center gap-3 group">
+        <Link to="/" className="flex items-center gap-3 group">
           <div className="flex items-center">
             {/* SVG Logo mark */}
             <div className="relative flex items-center">
@@ -98,7 +114,7 @@ export default function Navbar({ onOpenEstimate }) {
               </svg>
             </div>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-7">
@@ -125,9 +141,9 @@ export default function Navbar({ onOpenEstimate }) {
               <div className="absolute top-full left-0 w-80 bg-[#051821] border border-[#CBB890]/25 rounded-xl shadow-2xl p-3 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                 <div className="space-y-1">
                   {services.map((item, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={item.href}
+                      to={item.href}
                       onClick={() => setServicesDropdownOpen(false)}
                       className="block p-3 rounded-lg hover:bg-[#000D13] hover:border hover:border-[#CBB890]/30 transition-all group"
                     >
@@ -142,49 +158,47 @@ export default function Navbar({ onOpenEstimate }) {
                       <p className="text-xs text-white/60 leading-relaxed group-hover:text-white/80">
                         {item.desc}
                       </p>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
             )}
           </div>
 
-          <a
-            href="#portfolio"
+          <button
+            onClick={() => handleNavClick('#portfolio')}
             className="text-sm font-medium text-white/90 hover:text-[#CBB890] transition-colors"
           >
             Portfolio
-          </a>
-          <a
-            href="#before-after"
+          </button>
+
+          <button
+            onClick={() => handleNavClick('#before-after')}
             className="text-sm font-medium text-white/90 hover:text-[#CBB890] transition-colors"
           >
             Before & After
-          </a>
-          <a
-            href="#process"
+          </button>
+
+          <button
+            onClick={() => handleNavClick('#process')}
             className="text-sm font-medium text-white/90 hover:text-[#CBB890] transition-colors"
           >
-            Our Process
-          </a>
-          <a
-            href="#reviews"
-            className="text-sm font-medium text-white/90 hover:text-[#CBB890] transition-colors"
-          >
-            Reviews
-          </a>
-          <a
-            href="#areas"
+            Process
+          </button>
+
+          <Link
+            to="/service-areas"
             className="text-sm font-medium text-white/90 hover:text-[#CBB890] transition-colors"
           >
             Service Areas
-          </a>
-          <a
-            href="#about"
+          </Link>
+
+          <button
+            onClick={() => handleNavClick('#about')}
             className="text-sm font-medium text-white/90 hover:text-[#CBB890] transition-colors"
           >
             About Us
-          </a>
+          </button>
         </nav>
 
         {/* Desktop Actions */}
@@ -197,8 +211,9 @@ export default function Navbar({ onOpenEstimate }) {
             <span>(813) 394-4528</span>
           </a>
 
+          {/* Smooth Scroll to Single Estimate Form - ZERO POPUP */}
           <button
-            onClick={onOpenEstimate}
+            onClick={scrollToEstimate}
             className="inline-flex items-center gap-2 bg-[#CBB890] hover:bg-[#B8A377] text-[#000D13] font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
           >
             <span>Request an Estimate</span>
@@ -227,86 +242,79 @@ export default function Navbar({ onOpenEstimate }) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#000D13] border-b border-[#CBB890]/25 px-5 py-6 space-y-4 animate-in slide-in-from-top duration-300">
+        <div className="lg:hidden bg-[#000D13] border-b border-[#CBB890]/25 px-5 py-6 space-y-4 animate-in slide-in-from-top duration-300 max-h-[85vh] overflow-y-auto">
           <div className="space-y-2">
             <span className="text-[11px] font-bold tracking-widest uppercase text-[#CBB890]">
               Remodeling Services
             </span>
             <div className="grid grid-cols-1 gap-2 pt-1">
               {services.map((item, idx) => (
-                <a
+                <Link
                   key={idx}
-                  href={item.href}
+                  to={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between py-2 text-white/90 hover:text-[#CBB890] text-sm border-b border-white/5"
+                  className="p-3 rounded-lg bg-white/5 border border-white/10 flex items-center justify-between"
                 >
-                  <span>{item.title}</span>
-                  <span className="text-[10px] text-[#CBB890]">{item.tag}</span>
-                </a>
+                  <div>
+                    <p className="text-sm font-semibold text-white">{item.title}</p>
+                    <p className="text-xs text-white/60">{item.desc}</p>
+                  </div>
+                  <ArrowRight className="w-4 h-4 text-[#CBB890]" />
+                </Link>
               ))}
             </div>
           </div>
 
-          <div className="pt-2 border-t border-white/10 space-y-3">
-            <a
-              href="#portfolio"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-white/90 hover:text-[#CBB890]"
+          <div className="pt-4 border-t border-white/10 space-y-3">
+            <button
+              onClick={() => handleNavClick('#portfolio')}
+              className="block w-full text-left text-sm font-medium text-white/90 hover:text-[#CBB890]"
             >
-              Featured Portfolio
-            </a>
-            <a
-              href="#before-after"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-white/90 hover:text-[#CBB890]"
+              Project Portfolio
+            </button>
+            <button
+              onClick={() => handleNavClick('#before-after')}
+              className="block w-full text-left text-sm font-medium text-white/90 hover:text-[#CBB890]"
             >
-              Before & After Transformations
-            </a>
-            <a
-              href="#process"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-white/90 hover:text-[#CBB890]"
+              Before & After
+            </button>
+            <button
+              onClick={() => handleNavClick('#process')}
+              className="block w-full text-left text-sm font-medium text-white/90 hover:text-[#CBB890]"
             >
-              The 4-Step Build Process
-            </a>
-            <a
-              href="#reviews"
+              Our 4-Step Process
+            </button>
+            <Link
+              to="/service-areas"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-white/90 hover:text-[#CBB890]"
+              className="block w-full text-left text-sm font-medium text-white/90 hover:text-[#CBB890]"
             >
-              Client Reviews (5.0 ★)
-            </a>
-            <a
-              href="#areas"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-white/90 hover:text-[#CBB890]"
-            >
-              Odessa & Tampa Bay Service Areas
-            </a>
-            <a
-              href="#about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-white/90 hover:text-[#CBB890]"
+              Service Areas (Odessa & Tampa Bay)
+            </Link>
+            <button
+              onClick={() => handleNavClick('#about')}
+              className="block w-full text-left text-sm font-medium text-white/90 hover:text-[#CBB890]"
             >
               About Globe Construction
-            </a>
+            </button>
           </div>
 
           <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
-                onOpenEstimate();
+                scrollToEstimate();
               }}
-              className="w-full text-center bg-[#CBB890] text-[#000D13] font-bold text-xs uppercase tracking-wider py-3.5 rounded-lg shadow-md"
+              className="w-full py-3.5 bg-[#CBB890] text-[#000D13] font-bold text-xs uppercase tracking-wider rounded-xl text-center shadow-lg"
             >
-              Request an Estimate
+              Request Free Estimate
             </button>
             <a
               href="tel:+18133944528"
-              className="w-full text-center border border-[#CBB890]/40 text-[#CBB890] font-semibold text-xs uppercase tracking-wider py-3 rounded-lg"
+              className="w-full py-3 bg-white/5 border border-white/20 text-white font-semibold text-xs uppercase tracking-wider rounded-xl text-center flex items-center justify-center gap-2"
             >
-              Call (813) 394-4528
+              <Phone className="w-4 h-4 text-[#CBB890]" />
+              <span>(813) 394-4528</span>
             </a>
           </div>
         </div>

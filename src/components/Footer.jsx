@@ -1,14 +1,28 @@
 import React from 'react';
-import { Phone, Mail, MapPin, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Phone, Mail, MapPin, ShieldCheck, ArrowRight } from 'lucide-react';
+import { scrollToEstimate } from '../utils/scroll';
 
 export default function Footer() {
+  const handleAnchorClick = (hash) => {
+    if (window.location.pathname !== '/') {
+      window.location.href = `/${hash}`;
+    } else {
+      const id = hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="bg-[#000D13] text-white border-t border-[#CBB890]/25 pt-16 pb-24 lg:pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-14">
           {/* Brand & Stature Column */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center">
+            <Link to="/" className="flex items-center">
               <svg viewBox="0 0 280 65" className="h-10 w-auto" fill="none">
                 <path
                   d="M 12 36 L 52 14 L 88 30"
@@ -40,7 +54,7 @@ export default function Footer() {
                   CONSTRUCTION
                 </text>
               </svg>
-            </div>
+            </Link>
 
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-sm">
               Premium residential remodeling and architectural general contracting for discerning 
@@ -51,6 +65,16 @@ export default function Footer() {
               <ShieldCheck className="w-4 h-4 shrink-0" />
               <span>Licensed & Insured Florida General Contractor</span>
             </div>
+
+            <div className="pt-2">
+              <button
+                onClick={scrollToEstimate}
+                className="inline-flex items-center gap-2 text-xs font-bold text-[#CBB890] hover:text-white uppercase tracking-wider transition-colors"
+              >
+                <span>Request Project Estimate</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
           </div>
 
           {/* Core Services Column */}
@@ -60,29 +84,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-white/70">
               <li>
-                <a href="#kitchens" className="hover:text-[#CBB890] transition-colors">
+                <Link to="/kitchen-remodeling" className="hover:text-[#CBB890] transition-colors">
                   Kitchen Remodeling
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#bathrooms" className="hover:text-[#CBB890] transition-colors">
+                <Link to="/bathroom-remodeling" className="hover:text-[#CBB890] transition-colors">
                   Bathroom Remodeling & Wet Rooms
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#full-home" className="hover:text-[#CBB890] transition-colors">
+                <Link to="/full-home-remodeling" className="hover:text-[#CBB890] transition-colors">
                   Full Home Remodeling
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#additions" className="hover:text-[#CBB890] transition-colors">
+                <Link to="/home-additions" className="hover:text-[#CBB890] transition-colors">
                   Home Additions & Covered Lanais
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#commercial" className="hover:text-[#CBB890] transition-colors">
+                <Link to="/commercial-remodeling" className="hover:text-[#CBB890] transition-colors">
                   Commercial Remodeling & Buildouts
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -94,34 +118,49 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-white/70">
               <li>
-                <a href="#portfolio" className="hover:text-[#CBB890] transition-colors">
+                <button
+                  onClick={() => handleAnchorClick('#portfolio')}
+                  className="hover:text-[#CBB890] transition-colors text-left"
+                >
                   Project Portfolio
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#before-after" className="hover:text-[#CBB890] transition-colors">
+                <button
+                  onClick={() => handleAnchorClick('#before-after')}
+                  className="hover:text-[#CBB890] transition-colors text-left"
+                >
                   Before & After
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#process" className="hover:text-[#CBB890] transition-colors">
+                <button
+                  onClick={() => handleAnchorClick('#process')}
+                  className="hover:text-[#CBB890] transition-colors text-left"
+                >
                   Our 4-Step Process
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#reviews" className="hover:text-[#CBB890] transition-colors">
+                <button
+                  onClick={() => handleAnchorClick('#reviews')}
+                  className="hover:text-[#CBB890] transition-colors text-left"
+                >
                   Client Reviews (5.0 ★)
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#areas" className="hover:text-[#CBB890] transition-colors">
-                  Service Areas
-                </a>
+                <Link to="/service-areas" className="hover:text-[#CBB890] transition-colors">
+                  Service Areas (FL)
+                </Link>
               </li>
               <li>
-                <a href="#about" className="hover:text-[#CBB890] transition-colors">
+                <button
+                  onClick={() => handleAnchorClick('#about')}
+                  className="hover:text-[#CBB890] transition-colors text-left"
+                >
                   About Us
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -181,12 +220,12 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="#home" className="hover:text-white transition-colors">
+            <Link to="/" className="hover:text-white transition-colors">
               Privacy Policy
-            </a>
-            <a href="#home" className="hover:text-white transition-colors">
+            </Link>
+            <Link to="/" className="hover:text-white transition-colors">
               Terms of Service
-            </a>
+            </Link>
             <span className="text-white/20">|</span>
             <span>
               Developed by: <a href="https://athenagrowthmarketing.com" target="_blank" rel="noopener" className="text-[#CBB890] hover:underline font-medium">Athena Growth Marketing</a>

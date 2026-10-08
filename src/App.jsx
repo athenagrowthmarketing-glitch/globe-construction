@@ -1,96 +1,50 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import TrustStrip from './components/TrustStrip';
-import BrandPositioning from './components/BrandPositioning';
-import KitchenShowcase from './components/KitchenShowcase';
-import BathroomShowcase from './components/BathroomShowcase';
-import FullHomeShowcase from './components/FullHomeShowcase';
-import AdditionsShowcase from './components/AdditionsShowcase';
-import CommercialShowcase from './components/CommercialShowcase';
-import PortfolioGrid from './components/PortfolioGrid';
-import BeforeAfterSlider from './components/BeforeAfterSlider';
-import ProcessSection from './components/ProcessSection';
-import ReviewsSection from './components/ReviewsSection';
-import ServiceAreas from './components/ServiceAreas';
-import AboutSection from './components/AboutSection';
-import EstimateSection from './components/EstimateSection';
 import Footer from './components/Footer';
 import MobileStickyBar from './components/MobileStickyBar';
-import EstimateModal from './components/EstimateModal';
+import ScrollToTop from './components/ScrollToTop';
+
+import HomePage from './pages/HomePage';
+import KitchenRemodelingPage from './pages/KitchenRemodelingPage';
+import BathroomRemodelingPage from './pages/BathroomRemodelingPage';
+import FullHomeRemodelingPage from './pages/FullHomeRemodelingPage';
+import HomeAdditionsPage from './pages/HomeAdditionsPage';
+import CommercialRemodelingPage from './pages/CommercialRemodelingPage';
+import ServiceAreasPage from './pages/ServiceAreasPage';
+import { scrollToEstimate } from './utils/scroll';
 
 export default function App() {
-  const [isEstimateModalOpen, setIsEstimateModalOpen] = useState(false);
-
-  const openEstimateModal = () => {
-    setIsEstimateModalOpen(true);
-  };
-
-  const closeEstimateModal = () => {
-    setIsEstimateModalOpen(false);
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF9F6] text-[#1A2128]">
+      {/* Scroll Viewport to Top on Route Transitions */}
+      <ScrollToTop />
+
       {/* Top Announcement Bar */}
       <Topbar />
 
       {/* Sticky Luxury Navbar */}
-      <Navbar onOpenEstimate={openEstimateModal} />
+      <Navbar />
 
       <main className="flex-1">
-        {/* Flagship Hero Section */}
-        <Hero onOpenEstimate={openEstimateModal} />
-
-        {/* General Contractor Trust Strip */}
-        <TrustStrip />
-
-        {/* Brand Thesis & Differentiators */}
-        <BrandPositioning onOpenEstimate={openEstimateModal} />
-
-        {/* Core Tier 1 Services */}
-        <KitchenShowcase onOpenEstimate={openEstimateModal} />
-        <BathroomShowcase onOpenEstimate={openEstimateModal} />
-        <FullHomeShowcase onOpenEstimate={openEstimateModal} />
-
-        {/* Tier 2 Services: Structural Additions & Commercial Stature */}
-        <AdditionsShowcase onOpenEstimate={openEstimateModal} />
-        <CommercialShowcase onOpenEstimate={openEstimateModal} />
-
-        {/* Editorial Project Portfolio */}
-        <PortfolioGrid onOpenEstimate={openEstimateModal} />
-
-        {/* Interactive Before & After Slider */}
-        <BeforeAfterSlider />
-
-        {/* The 4-Step Client Journey */}
-        <ProcessSection />
-
-        {/* 5.0 Star Client Reviews */}
-        <ReviewsSection />
-
-        {/* Geographic Service Footprint */}
-        <ServiceAreas />
-
-        {/* About Us & Field Heritage */}
-        <AboutSection onOpenEstimate={openEstimateModal} />
-
-        {/* Interactive Multi-Step Estimate Section */}
-        <EstimateSection />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/kitchen-remodeling" element={<KitchenRemodelingPage />} />
+          <Route path="/bathroom-remodeling" element={<BathroomRemodelingPage />} />
+          <Route path="/full-home-remodeling" element={<FullHomeRemodelingPage />} />
+          <Route path="/home-additions" element={<HomeAdditionsPage />} />
+          <Route path="/commercial-remodeling" element={<CommercialRemodelingPage />} />
+          <Route path="/service-areas" element={<ServiceAreasPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
 
-      {/* Architectural Deep Navy Footer */}
+      {/* Architectural Deep Navy Footer with Athena Credit */}
       <Footer />
 
       {/* Mobile Sticky Action Bar */}
-      <MobileStickyBar onOpenEstimate={openEstimateModal} />
-
-      {/* Conversion Estimate Modal */}
-      <EstimateModal
-        isOpen={isEstimateModalOpen}
-        onClose={closeEstimateModal}
-      />
+      <MobileStickyBar onOpenEstimate={scrollToEstimate} />
     </div>
   );
 }
