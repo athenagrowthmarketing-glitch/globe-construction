@@ -122,16 +122,15 @@ export default function BeforeAfterSlider() {
               {currentPair.afterLabel}
             </span>
 
-            {/* Before Image (Clipped Foreground) */}
+            {/* Before Image (Clipped Foreground via clipPath) */}
             <div
-              className="absolute inset-0 overflow-hidden pointer-events-none"
-              style={{ width: `${sliderPosition}%` }}
+              className="absolute inset-0 pointer-events-none"
+              style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
               <img
                 src={currentPair.beforeImg}
                 alt={currentPair.beforeLabel}
-                className="absolute inset-0 w-full h-full object-cover pointer-events-none max-w-none"
-                style={{ width: containerRef.current ? `${containerRef.current.clientWidth}px` : '100%' }}
+                className="w-full h-full object-cover pointer-events-none"
               />
               <span className="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider bg-[#000D13]/85 text-white/90 border border-white/20 backdrop-blur-sm pointer-events-none">
                 {currentPair.beforeLabel}
