@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Sparkles, ChevronsLeftRight } from 'lucide-react';
+import { Sparkles, ChevronsLeftRight, SlidersHorizontal } from 'lucide-react';
 
 export default function BeforeAfterSlider() {
   const [sliderPosition, setSliderPosition] = useState(50);
