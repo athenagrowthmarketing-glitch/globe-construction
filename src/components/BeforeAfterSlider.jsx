@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Sparkles, SlidersHorizontal } from 'lucide-react';
+import { Sparkles, ChevronsLeftRight } from 'lucide-react';
 
 export default function BeforeAfterSlider() {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -143,7 +143,7 @@ export default function BeforeAfterSlider() {
               style={{ left: `${sliderPosition}%` }}
             >
               <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#000D13] border-2 border-[#CBB890] flex items-center justify-center text-[#CBB890] shadow-xl">
-                <SlidersHorizontal className="w-4 h-4" />
+                <ChevronsLeftRight className="w-5 h-5" />
               </div>
             </div>
           </div>

@@ -22,7 +22,7 @@ export default function ReviewsSection() {
         'The curbless walk-in shower with the freestanding tub is truly like staying at a 5-star resort. Their tile cuts, waterproofing, and plumbing precision gave us absolute peace of mind. Globe handles permits and construction with real general contractor professionalism.',
     },
     {
-      author: 'Carlos & Elena R.',
+      author: 'Carlos & Elena',
       location: 'Pasco County, FL',
       project: 'Whole-Home Renovation & Addition',
       rating: 5,
@@ -87,14 +87,14 @@ export default function ReviewsSection() {
               </div>
 
               <div className="pt-4 border-t border-[#E5DFD7]">
-                <div className="flex items-center justify-between">
+                <div className="flex items-start sm:items-center justify-between gap-2">
                   <div>
-                    <h4 className="text-sm font-bold text-[#1A2128] font-display">
+                    <h4 className="text-sm font-bold text-[#1A2128] font-display whitespace-nowrap">
                       {rev.author}
                     </h4>
                     <p className="text-xs text-[#7E8B98]">{rev.location}</p>
                   </div>
-                  <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-[#FAF9F6] text-[#8E7F60] border border-[#E5DFD7]">
+                  <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-[#FAF9F6] text-[#8E7F60] border border-[#E5DFD7] shrink-0 text-right">
                     {rev.project}
                   </span>
                 </div>
