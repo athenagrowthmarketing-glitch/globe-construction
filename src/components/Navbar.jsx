@@ -78,42 +78,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="flex items-center">
-            {/* SVG Logo mark */}
-            <div className="relative flex items-center">
-              <svg viewBox="0 0 280 65" className="h-10 sm:h-11 w-auto" fill="none">
-                <path
-                  d="M 12 36 L 52 14 L 88 30"
-                  stroke="#CBB890"
-                  strokeWidth="3.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <text
-                  x="48"
-                  y="40"
-                  fontFamily="'Plus Jakarta Sans', sans-serif"
-                  fontSize="28"
-                  fontWeight="800"
-                  fill="#CBB890"
-                  letterSpacing="0.06em"
-                >
-                  GLOBE
-                </text>
-                <text
-                  x="50"
-                  y="56"
-                  fontFamily="'Plus Jakarta Sans', sans-serif"
-                  fontSize="9.5"
-                  fontWeight="600"
-                  fill="#E2D7C0"
-                  letterSpacing="0.28em"
-                >
-                  CONSTRUCTION
-                </text>
-              </svg>
-            </div>
-          </div>
+          <img
+            src="/images/globe-logo-transparent.png"
+            alt="Globe Logo"
+            className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop Navigation */}

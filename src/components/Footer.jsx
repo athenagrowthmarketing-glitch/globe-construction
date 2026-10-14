@@ -22,38 +22,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-14">
           {/* Brand & Stature Column */}
           <div className="lg:col-span-4 space-y-4">
-            <Link to="/" className="flex items-center">
-              <svg viewBox="0 0 280 65" className="h-10 w-auto" fill="none">
-                <path
-                  d="M 12 36 L 52 14 L 88 30"
-                  stroke="#CBB890"
-                  strokeWidth="3.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <text
-                  x="48"
-                  y="40"
-                  fontFamily="'Plus Jakarta Sans', sans-serif"
-                  fontSize="28"
-                  fontWeight="800"
-                  fill="#CBB890"
-                  letterSpacing="0.06em"
-                >
-                  GLOBE
-                </text>
-                <text
-                  x="50"
-                  y="56"
-                  fontFamily="'Plus Jakarta Sans', sans-serif"
-                  fontSize="9.5"
-                  fontWeight="600"
-                  fill="#E2D7C0"
-                  letterSpacing="0.28em"
-                >
-                  CONSTRUCTION
-                </text>
-              </svg>
+            <Link to="/" className="flex items-center group">
+              <img
+                src="/images/globe-logo-transparent.png"
+                alt="Globe Logo"
+                className="h-11 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              />
             </Link>
 
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-sm">
