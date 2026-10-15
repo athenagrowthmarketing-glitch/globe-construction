@@ -27,18 +27,6 @@ export const galleryItems = [
   },
   {
     "id": "globe-002",
-    "src": "/images/gallery/full/casa-dsc05396-jpg.webp",
-    "thumb": "/images/gallery/thumbs/casa-dsc05396-jpg-thumb.webp",
-    "category": "kitchen",
-    "title": "Ceiling-Height Custom White Shaker Cabinets",
-    "titlePt": "Armários Shaker Brancos até o Teto",
-    "folder": "Casa",
-    "aspect": 1.5,
-    "width": 6158,
-    "height": 4105
-  },
-  {
-    "id": "globe-003",
     "src": "/images/gallery/full/casa-dsc05397-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05397-jpg-thumb.webp",
     "category": "kitchen",
@@ -50,7 +38,7 @@ export const galleryItems = [
     "height": 4083
   },
   {
-    "id": "globe-004",
+    "id": "globe-003",
     "src": "/images/gallery/full/casa-dsc05398-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05398-jpg-thumb.webp",
     "category": "kitchen",
@@ -62,19 +50,7 @@ export const galleryItems = [
     "height": 4025
   },
   {
-    "id": "globe-005",
-    "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-5-jpg.webp",
-    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-5-jpg-thumb.webp",
-    "category": "kitchen",
-    "title": "Transitional Charcoal Kitchen & Chimney Range Hood",
-    "titlePt": "Cozinha Grafite com Fogão a Gás e Coifa",
-    "folder": "Avulso",
-    "aspect": 1.333,
-    "width": 1600,
-    "height": 1200
-  },
-  {
-    "id": "globe-006",
+    "id": "globe-004",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-6-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-6-jpg-thumb.webp",
     "category": "kitchen",
@@ -86,31 +62,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-007",
-    "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-13-jpg.webp",
-    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-13-jpg-thumb.webp",
-    "category": "kitchen",
-    "title": "Modern Open Kitchen with Mitered Quartz Island",
-    "titlePt": "Cozinha Aberta com Ilha em Cascata",
-    "folder": "Avulso",
-    "aspect": 1.333,
-    "width": 1600,
-    "height": 1200
-  },
-  {
-    "id": "globe-008",
-    "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-15-jpg.webp",
-    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-15-jpg-thumb.webp",
-    "category": "kitchen",
-    "title": "Gourmet Kitchen with Stained Wood Slat Ceiling",
-    "titlePt": "Cozinha Gourmet com Teto Ripada em Madeira",
-    "folder": "Avulso",
-    "aspect": 0.75,
-    "width": 1200,
-    "height": 1600
-  },
-  {
-    "id": "globe-009",
+    "id": "globe-005",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-30-53-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-30-53-jpg-thumb.webp",
     "category": "kitchen",
@@ -122,19 +74,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-010",
-    "src": "/images/gallery/full/avulso-photo-2026-05-23-21-30-53-2-jpg.webp",
-    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-30-53-2-jpg-thumb.webp",
-    "category": "kitchen",
-    "title": "Dual-Level Quartz Island & Pendant Sconces",
-    "titlePt": "Ilha em Quartzo com Pendentes Esculturais",
-    "folder": "Avulso",
-    "aspect": 0.75,
-    "width": 1200,
-    "height": 1600
-  },
-  {
-    "id": "globe-011",
+    "id": "globe-006",
     "src": "/images/gallery/full/erick-img-0510-jpg.webp",
     "thumb": "/images/gallery/thumbs/erick-img-0510-jpg-thumb.webp",
     "category": "kitchen",
@@ -146,7 +86,7 @@ export const galleryItems = [
     "height": 5712
   },
   {
-    "id": "globe-012",
+    "id": "globe-007",
     "src": "/images/gallery/full/erick-img-0512-jpg.webp",
     "thumb": "/images/gallery/thumbs/erick-img-0512-jpg-thumb.webp",
     "category": "kitchen",
@@ -158,7 +98,7 @@ export const galleryItems = [
     "height": 5712
   },
   {
-    "id": "globe-013",
+    "id": "globe-008",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-3-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-3-jpg-thumb.webp",
     "category": "kitchen",
@@ -170,31 +110,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-014",
-    "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-7-jpg.webp",
-    "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-7-jpg-thumb.webp",
-    "category": "kitchen",
-    "title": "Sculptural Plaster Range Hood & Custom Island",
-    "titlePt": "Coifa em Gesso Escultural e Ilha Central",
-    "folder": "Matt",
-    "aspect": 1.333,
-    "width": 1600,
-    "height": 1200
-  },
-  {
-    "id": "globe-015",
-    "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-10-jpg.webp",
-    "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-10-jpg-thumb.webp",
-    "category": "kitchen",
-    "title": "Rustic Wood Kitchen Cabinetry & Tile Backsplash",
-    "titlePt": "Marcenaria Rústica e Frontão em Azulejos",
-    "folder": "Matt",
-    "aspect": 0.75,
-    "width": 1200,
-    "height": 1600
-  },
-  {
-    "id": "globe-016",
+    "id": "globe-009",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-16-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-16-jpg-thumb.webp",
     "category": "kitchen",
@@ -206,7 +122,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-017",
+    "id": "globe-010",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-00-6-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-00-6-jpg-thumb.webp",
     "category": "kitchen",
@@ -218,7 +134,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-018",
+    "id": "globe-011",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-30-00-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-30-00-jpg-thumb.webp",
     "category": "kitchen",
@@ -230,19 +146,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-019",
-    "src": "/images/gallery/full/miami-photo-2026-05-23-21-11-20-2-jpg.webp",
-    "thumb": "/images/gallery/thumbs/miami-photo-2026-05-23-21-11-20-2-jpg-thumb.webp",
-    "category": "kitchen",
-    "title": "Modern Galley Kitchen & Stainless Appliances",
-    "titlePt": "Cozinha Corredor com Eletros em Aço Inox",
-    "folder": "Miami",
-    "aspect": 0.75,
-    "width": 1200,
-    "height": 1600
-  },
-  {
-    "id": "globe-020",
+    "id": "globe-012",
     "src": "/images/gallery/full/miami-photo-2026-05-23-21-11-20-3-jpg.webp",
     "thumb": "/images/gallery/thumbs/miami-photo-2026-05-23-21-11-20-3-jpg-thumb.webp",
     "category": "kitchen",
@@ -254,7 +158,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-021",
+    "id": "globe-013",
     "src": "/images/gallery/full/miami-photo-2026-05-23-21-11-20-7-jpg.webp",
     "thumb": "/images/gallery/thumbs/miami-photo-2026-05-23-21-11-20-7-jpg-thumb.webp",
     "category": "kitchen",
@@ -266,7 +170,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-022",
+    "id": "globe-014",
     "src": "/images/gallery/full/sarasota-still-2026-08-25-111809-4-11-1-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-still-2026-08-25-111809-4-11-1-jpeg-thumb.webp",
     "category": "kitchen",
@@ -278,7 +182,7 @@ export const galleryItems = [
     "height": 3840
   },
   {
-    "id": "globe-023",
+    "id": "globe-015",
     "src": "/images/gallery/full/casa-dsc05402-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05402-jpg-thumb.webp",
     "category": "bathroom",
@@ -290,7 +194,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-024",
+    "id": "globe-016",
     "src": "/images/gallery/full/casa-dsc05404-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05404-jpg-thumb.webp",
     "category": "bathroom",
@@ -302,7 +206,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-025",
+    "id": "globe-017",
     "src": "/images/gallery/full/casa-dsc05405-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05405-jpg-thumb.webp",
     "category": "bathroom",
@@ -314,7 +218,7 @@ export const galleryItems = [
     "height": 4012
   },
   {
-    "id": "globe-026",
+    "id": "globe-018",
     "src": "/images/gallery/full/casa-dsc05406-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05406-jpg-thumb.webp",
     "category": "bathroom",
@@ -326,7 +230,7 @@ export const galleryItems = [
     "height": 3927
   },
   {
-    "id": "globe-027",
+    "id": "globe-019",
     "src": "/images/gallery/full/casa-dsc05409-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05409-jpg-thumb.webp",
     "category": "bathroom",
@@ -338,7 +242,7 @@ export const galleryItems = [
     "height": 3923
   },
   {
-    "id": "globe-028",
+    "id": "globe-020",
     "src": "/images/gallery/full/casa-dsc05410-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05410-jpg-thumb.webp",
     "category": "bathroom",
@@ -350,7 +254,7 @@ export const galleryItems = [
     "height": 3923
   },
   {
-    "id": "globe-029",
+    "id": "globe-021",
     "src": "/images/gallery/full/casa-dsc05411-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05411-jpg-thumb.webp",
     "category": "bathroom",
@@ -362,7 +266,7 @@ export const galleryItems = [
     "height": 3806
   },
   {
-    "id": "globe-030",
+    "id": "globe-022",
     "src": "/images/gallery/full/casa-dsc05415-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05415-jpg-thumb.webp",
     "category": "bathroom",
@@ -374,7 +278,7 @@ export const galleryItems = [
     "height": 3923
   },
   {
-    "id": "globe-031",
+    "id": "globe-023",
     "src": "/images/gallery/full/casa-dsc05416-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05416-jpg-thumb.webp",
     "category": "bathroom",
@@ -386,7 +290,7 @@ export const galleryItems = [
     "height": 3923
   },
   {
-    "id": "globe-032",
+    "id": "globe-024",
     "src": "/images/gallery/full/casa-dsc05417-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05417-jpg-thumb.webp",
     "category": "bathroom",
@@ -398,7 +302,7 @@ export const galleryItems = [
     "height": 3923
   },
   {
-    "id": "globe-033",
+    "id": "globe-025",
     "src": "/images/gallery/full/casa-dsc05421-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05421-jpg-thumb.webp",
     "category": "bathroom",
@@ -410,7 +314,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-034",
+    "id": "globe-026",
     "src": "/images/gallery/full/casa-dsc05435-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05435-jpg-thumb.webp",
     "category": "bathroom",
@@ -422,7 +326,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-035",
+    "id": "globe-027",
     "src": "/images/gallery/full/casa-dsc05439-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05439-jpg-thumb.webp",
     "category": "bathroom",
@@ -434,7 +338,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-036",
+    "id": "globe-028",
     "src": "/images/gallery/full/casa-dsc05442-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05442-jpg-thumb.webp",
     "category": "bathroom",
@@ -446,7 +350,7 @@ export const galleryItems = [
     "height": 4065
   },
   {
-    "id": "globe-037",
+    "id": "globe-029",
     "src": "/images/gallery/full/casa-dsc05443-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05443-jpg-thumb.webp",
     "category": "bathroom",
@@ -458,7 +362,7 @@ export const galleryItems = [
     "height": 4065
   },
   {
-    "id": "globe-038",
+    "id": "globe-030",
     "src": "/images/gallery/full/casa-img-5630-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5630-jpg-thumb.webp",
     "category": "bathroom",
@@ -470,7 +374,7 @@ export const galleryItems = [
     "height": 5346
   },
   {
-    "id": "globe-039",
+    "id": "globe-031",
     "src": "/images/gallery/full/casa-img-5631-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5631-jpg-thumb.webp",
     "category": "bathroom",
@@ -482,7 +386,7 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-040",
+    "id": "globe-032",
     "src": "/images/gallery/full/casa-img-5647-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5647-jpg-thumb.webp",
     "category": "bathroom",
@@ -494,7 +398,7 @@ export const galleryItems = [
     "height": 5285
   },
   {
-    "id": "globe-041",
+    "id": "globe-033",
     "src": "/images/gallery/full/casa-img-5649-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5649-jpg-thumb.webp",
     "category": "bathroom",
@@ -506,7 +410,7 @@ export const galleryItems = [
     "height": 10431
   },
   {
-    "id": "globe-042",
+    "id": "globe-034",
     "src": "/images/gallery/full/casa-img-5652-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5652-jpg-thumb.webp",
     "category": "bathroom",
@@ -518,7 +422,7 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-043",
+    "id": "globe-035",
     "src": "/images/gallery/full/casa-img-5653-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5653-jpg-thumb.webp",
     "category": "bathroom",
@@ -530,7 +434,7 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-044",
+    "id": "globe-036",
     "src": "/images/gallery/full/9005-photo-2026-05-23-20-01-11-3-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-20-01-11-3-jpg-thumb.webp",
     "category": "bathroom",
@@ -542,7 +446,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-045",
+    "id": "globe-037",
     "src": "/images/gallery/full/9005-photo-2026-05-23-20-01-11-6-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-20-01-11-6-jpg-thumb.webp",
     "category": "bathroom",
@@ -554,7 +458,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-046",
+    "id": "globe-038",
     "src": "/images/gallery/full/9005-photo-2026-05-23-20-01-11-8-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-20-01-11-8-jpg-thumb.webp",
     "category": "bathroom",
@@ -566,7 +470,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-047",
+    "id": "globe-039",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-27-08-2-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-27-08-2-jpg-thumb.webp",
     "category": "bathroom",
@@ -578,7 +482,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-048",
+    "id": "globe-040",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-27-08-3-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-27-08-3-jpg-thumb.webp",
     "category": "bathroom",
@@ -590,7 +494,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-049",
+    "id": "globe-041",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-27-08-4-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-27-08-4-jpg-thumb.webp",
     "category": "bathroom",
@@ -602,7 +506,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-050",
+    "id": "globe-042",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-27-08-5-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-27-08-5-jpg-thumb.webp",
     "category": "bathroom",
@@ -614,7 +518,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-051",
+    "id": "globe-043",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-3-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-3-jpg-thumb.webp",
     "category": "bathroom",
@@ -626,19 +530,19 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-052",
+    "id": "globe-044",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-4-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-4-jpg-thumb.webp",
     "category": "bathroom",
-    "title": "Iridescent Glass Mosaic Shower & Double Niches",
-    "titlePt": "Box em Pastilhas de Vidro com Nichos Duplos",
+    "title": "Calacatta Tile Bath Wall with Glass Accent Border",
+    "titlePt": "Revestimento Calacatta com Faixa em Pastilha de Vidro",
     "folder": "Avulso",
     "aspect": 1.333,
     "width": 1600,
     "height": 1200
   },
   {
-    "id": "globe-053",
+    "id": "globe-045",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-5-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-5-jpg-thumb.webp",
     "category": "bathroom",
@@ -650,7 +554,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-054",
+    "id": "globe-046",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-9-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-9-jpg-thumb.webp",
     "category": "bathroom",
@@ -662,7 +566,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-055",
+    "id": "globe-047",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-10-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-10-jpg-thumb.webp",
     "category": "bathroom",
@@ -674,7 +578,19 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-056",
+    "id": "globe-048",
+    "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-13-jpg.webp",
+    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-13-jpg-thumb.webp",
+    "category": "bathroom",
+    "title": "Iridescent Glass Mosaic Shower & Double Niches",
+    "titlePt": "Box em Pastilhas de Vidro com Nichos Duplos",
+    "folder": "Avulso",
+    "aspect": 1.333,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "id": "globe-049",
     "src": "/images/gallery/full/estero-photo-2026-05-23-19-36-29-jpg.webp",
     "thumb": "/images/gallery/thumbs/estero-photo-2026-05-23-19-36-29-jpg-thumb.webp",
     "category": "bathroom",
@@ -686,7 +602,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-057",
+    "id": "globe-050",
     "src": "/images/gallery/full/estero-photo-2026-05-23-19-36-29-5-jpg.webp",
     "thumb": "/images/gallery/thumbs/estero-photo-2026-05-23-19-36-29-5-jpg-thumb.webp",
     "category": "bathroom",
@@ -698,7 +614,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-058",
+    "id": "globe-051",
     "src": "/images/gallery/full/estero-photo-2026-05-23-19-36-29-6-jpg.webp",
     "thumb": "/images/gallery/thumbs/estero-photo-2026-05-23-19-36-29-6-jpg-thumb.webp",
     "category": "bathroom",
@@ -710,7 +626,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-059",
+    "id": "globe-052",
     "src": "/images/gallery/full/estero-photo-2026-05-23-19-36-29-8-jpg.webp",
     "thumb": "/images/gallery/thumbs/estero-photo-2026-05-23-19-36-29-8-jpg-thumb.webp",
     "category": "bathroom",
@@ -722,7 +638,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-060",
+    "id": "globe-053",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-2-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-2-jpg-thumb.webp",
     "category": "bathroom",
@@ -734,7 +650,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-061",
+    "id": "globe-054",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-5-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-5-jpg-thumb.webp",
     "category": "bathroom",
@@ -746,7 +662,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-062",
+    "id": "globe-055",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-12-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-12-jpg-thumb.webp",
     "category": "bathroom",
@@ -758,7 +674,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-063",
+    "id": "globe-056",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-19-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-19-jpg-thumb.webp",
     "category": "bathroom",
@@ -770,7 +686,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-064",
+    "id": "globe-057",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-21-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-21-jpg-thumb.webp",
     "category": "bathroom",
@@ -782,7 +698,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-065",
+    "id": "globe-058",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-00-2-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-00-2-jpg-thumb.webp",
     "category": "bathroom",
@@ -794,7 +710,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-066",
+    "id": "globe-059",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-30-15-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-30-15-jpg-thumb.webp",
     "category": "bathroom",
@@ -806,7 +722,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-067",
+    "id": "globe-060",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-30-18-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-30-18-jpg-thumb.webp",
     "category": "bathroom",
@@ -818,7 +734,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-068",
+    "id": "globe-061",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-30-26-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-30-26-jpg-thumb.webp",
     "category": "bathroom",
@@ -830,7 +746,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-069",
+    "id": "globe-062",
     "src": "/images/gallery/full/miami-photo-2026-05-23-21-11-20-jpg.webp",
     "thumb": "/images/gallery/thumbs/miami-photo-2026-05-23-21-11-20-jpg-thumb.webp",
     "category": "bathroom",
@@ -842,7 +758,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-070",
+    "id": "globe-063",
     "src": "/images/gallery/full/miami-photo-2026-05-23-21-11-20-4-jpg.webp",
     "thumb": "/images/gallery/thumbs/miami-photo-2026-05-23-21-11-20-4-jpg-thumb.webp",
     "category": "bathroom",
@@ -854,7 +770,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-071",
+    "id": "globe-064",
     "src": "/images/gallery/full/miami-photo-2026-05-23-21-11-20-6-jpg.webp",
     "thumb": "/images/gallery/thumbs/miami-photo-2026-05-23-21-11-20-6-jpg-thumb.webp",
     "category": "bathroom",
@@ -866,7 +782,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-072",
+    "id": "globe-065",
     "src": "/images/gallery/full/miami-photo-2026-05-23-21-11-20-8-jpg.webp",
     "thumb": "/images/gallery/thumbs/miami-photo-2026-05-23-21-11-20-8-jpg-thumb.webp",
     "category": "bathroom",
@@ -878,7 +794,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-073",
+    "id": "globe-066",
     "src": "/images/gallery/full/sarasota-still-2026-08-25-111809-1-2-1-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-still-2026-08-25-111809-1-2-1-jpeg-thumb.webp",
     "category": "bathroom",
@@ -890,7 +806,7 @@ export const galleryItems = [
     "height": 3840
   },
   {
-    "id": "globe-074",
+    "id": "globe-067",
     "src": "/images/gallery/full/sarasota-still-2026-08-25-111809-1-5-1-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-still-2026-08-25-111809-1-5-1-jpeg-thumb.webp",
     "category": "bathroom",
@@ -902,7 +818,7 @@ export const galleryItems = [
     "height": 3840
   },
   {
-    "id": "globe-075",
+    "id": "globe-068",
     "src": "/images/gallery/full/sarasota-still-2026-08-25-111809-1-8-1-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-still-2026-08-25-111809-1-8-1-jpeg-thumb.webp",
     "category": "bathroom",
@@ -914,7 +830,7 @@ export const galleryItems = [
     "height": 3840
   },
   {
-    "id": "globe-076",
+    "id": "globe-069",
     "src": "/images/gallery/full/sarasota-still-2026-08-25-111809-4-4-1-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-still-2026-08-25-111809-4-4-1-jpeg-thumb.webp",
     "category": "bathroom",
@@ -926,7 +842,7 @@ export const galleryItems = [
     "height": 3840
   },
   {
-    "id": "globe-077",
+    "id": "globe-070",
     "src": "/images/gallery/full/casa-dsc05403-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05403-jpg-thumb.webp",
     "category": "flooring",
@@ -938,7 +854,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-078",
+    "id": "globe-071",
     "src": "/images/gallery/full/casa-img-5645-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5645-jpg-thumb.webp",
     "category": "flooring",
@@ -950,19 +866,19 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-079",
+    "id": "globe-072",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-6-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-6-jpg-thumb.webp",
     "category": "flooring",
-    "title": "Bookmatched Polished Marble Floor Tiles",
-    "titlePt": "Porcelanato Polido com Desenho Livro Aberto",
+    "title": "Penthouse Hardwood Floor with Coastal Glass Wall",
+    "titlePt": "Piso de Madeira Nobre Integrado à Vista Panorâmica",
     "folder": "Avulso",
     "aspect": 1.333,
     "width": 1600,
     "height": 1200
   },
   {
-    "id": "globe-080",
+    "id": "globe-073",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-12-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-12-jpg-thumb.webp",
     "category": "flooring",
@@ -974,7 +890,19 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-081",
+    "id": "globe-074",
+    "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-15-jpg.webp",
+    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-15-jpg-thumb.webp",
+    "category": "flooring",
+    "title": "Large-Format Polished Calacatta Marble Floor with Panoramic Bay Views",
+    "titlePt": "Porcelanato Polido Grandes Formatos com Vista para a Baía",
+    "folder": "Avulso",
+    "aspect": 0.75,
+    "width": 1200,
+    "height": 1600
+  },
+  {
+    "id": "globe-075",
     "src": "/images/gallery/full/erick-img-0514-jpg.webp",
     "thumb": "/images/gallery/thumbs/erick-img-0514-jpg-thumb.webp",
     "category": "flooring",
@@ -986,7 +914,7 @@ export const galleryItems = [
     "height": 5712
   },
   {
-    "id": "globe-082",
+    "id": "globe-076",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-6-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-6-jpg-thumb.webp",
     "category": "flooring",
@@ -998,7 +926,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-083",
+    "id": "globe-077",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-8-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-8-jpg-thumb.webp",
     "category": "flooring",
@@ -1010,7 +938,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-084",
+    "id": "globe-078",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-22-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-22-jpg-thumb.webp",
     "category": "flooring",
@@ -1022,9 +950,9 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-085",
-    "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-2-jpg.webp",
-    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-2-jpg-thumb.webp",
+    "id": "globe-079",
+    "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-5-jpg.webp",
+    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-5-jpg-thumb.webp",
     "category": "exterior",
     "title": "Outdoor Summer Kitchen with Wood-Fired Pizza Oven",
     "titlePt": "Cozinha Gourmet Externa com Forno de Pizza",
@@ -1034,19 +962,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-086",
-    "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-4-jpg.webp",
-    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-4-jpg-thumb.webp",
-    "category": "exterior",
-    "title": "Covered Summer Kitchen Bar & Mosaic Tile Detailing",
-    "titlePt": "Bar Gourmet Externo com Azulejos Decorativos",
-    "folder": "Avulso",
-    "aspect": 0.75,
-    "width": 1200,
-    "height": 1600
-  },
-  {
-    "id": "globe-087",
+    "id": "globe-080",
     "src": "/images/gallery/full/9005-photo-2026-05-23-19-54-48-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-19-54-48-jpg-thumb.webp",
     "category": "exterior",
@@ -1058,7 +974,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-088",
+    "id": "globe-081",
     "src": "/images/gallery/full/9005-photo-2026-05-23-19-57-48-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-19-57-48-jpg-thumb.webp",
     "category": "exterior",
@@ -1070,7 +986,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-089",
+    "id": "globe-082",
     "src": "/images/gallery/full/9005-photo-2026-05-23-19-58-44-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-19-58-44-jpg-thumb.webp",
     "category": "exterior",
@@ -1082,7 +998,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-090",
+    "id": "globe-083",
     "src": "/images/gallery/full/9005-photo-2026-05-23-19-58-59-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-19-58-59-jpg-thumb.webp",
     "category": "exterior",
@@ -1094,7 +1010,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-091",
+    "id": "globe-084",
     "src": "/images/gallery/full/9005-photo-2026-05-23-19-59-12-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-19-59-12-jpg-thumb.webp",
     "category": "exterior",
@@ -1106,7 +1022,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-092",
+    "id": "globe-085",
     "src": "/images/gallery/full/casa-dsc05448-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05448-jpg-thumb.webp",
     "category": "exterior",
@@ -1118,7 +1034,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-093",
+    "id": "globe-086",
     "src": "/images/gallery/full/casa-dsc05450-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05450-jpg-thumb.webp",
     "category": "exterior",
@@ -1130,7 +1046,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-094",
+    "id": "globe-087",
     "src": "/images/gallery/full/casa-dsc05453-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05453-jpg-thumb.webp",
     "category": "exterior",
@@ -1142,7 +1058,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-095",
+    "id": "globe-088",
     "src": "/images/gallery/full/casa-dsc05399-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05399-jpg-thumb.webp",
     "category": "living",
@@ -1154,7 +1070,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-096",
+    "id": "globe-089",
     "src": "/images/gallery/full/casa-dsc05401-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05401-jpg-thumb.webp",
     "category": "living",
@@ -1166,7 +1082,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-097",
+    "id": "globe-090",
     "src": "/images/gallery/full/casa-dsc05408-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05408-jpg-thumb.webp",
     "category": "living",
@@ -1178,7 +1094,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-098",
+    "id": "globe-091",
     "src": "/images/gallery/full/casa-dsc05419-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05419-jpg-thumb.webp",
     "category": "living",
@@ -1190,7 +1106,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-099",
+    "id": "globe-092",
     "src": "/images/gallery/full/casa-dsc05420-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05420-jpg-thumb.webp",
     "category": "living",
@@ -1202,7 +1118,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-100",
+    "id": "globe-093",
     "src": "/images/gallery/full/casa-dsc05423-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05423-jpg-thumb.webp",
     "category": "living",
@@ -1214,7 +1130,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-101",
+    "id": "globe-094",
     "src": "/images/gallery/full/casa-dsc05424-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-dsc05424-jpg-thumb.webp",
     "category": "living",
@@ -1226,7 +1142,7 @@ export const galleryItems = [
     "height": 4128
   },
   {
-    "id": "globe-102",
+    "id": "globe-095",
     "src": "/images/gallery/full/casa-img-5628-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5628-jpg-thumb.webp",
     "category": "living",
@@ -1238,7 +1154,7 @@ export const galleryItems = [
     "height": 2688
   },
   {
-    "id": "globe-103",
+    "id": "globe-096",
     "src": "/images/gallery/full/casa-img-5632-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5632-jpg-thumb.webp",
     "category": "living",
@@ -1250,7 +1166,7 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-104",
+    "id": "globe-097",
     "src": "/images/gallery/full/casa-img-5637-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5637-jpg-thumb.webp",
     "category": "living",
@@ -1262,7 +1178,7 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-105",
+    "id": "globe-098",
     "src": "/images/gallery/full/casa-img-5638-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5638-jpg-thumb.webp",
     "category": "living",
@@ -1274,7 +1190,7 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-106",
+    "id": "globe-099",
     "src": "/images/gallery/full/casa-img-5639-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5639-jpg-thumb.webp",
     "category": "living",
@@ -1286,7 +1202,7 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-107",
+    "id": "globe-100",
     "src": "/images/gallery/full/casa-img-5644-jpg.webp",
     "thumb": "/images/gallery/thumbs/casa-img-5644-jpg-thumb.webp",
     "category": "living",
@@ -1298,7 +1214,7 @@ export const galleryItems = [
     "height": 5376
   },
   {
-    "id": "globe-108",
+    "id": "globe-101",
     "src": "/images/gallery/full/9005-photo-2026-05-23-20-01-11-4-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-20-01-11-4-jpg-thumb.webp",
     "category": "living",
@@ -1310,7 +1226,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-109",
+    "id": "globe-102",
     "src": "/images/gallery/full/9005-photo-2026-05-23-20-01-11-7-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-20-01-11-7-jpg-thumb.webp",
     "category": "living",
@@ -1322,31 +1238,31 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-110",
-    "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-jpg.webp",
-    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-jpg-thumb.webp",
+    "id": "globe-103",
+    "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-2-jpg.webp",
+    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-2-jpg-thumb.webp",
     "category": "living",
-    "title": "Master Bedroom with Charcoal Board & Batten Wall",
-    "titlePt": "Quarto com Painel Ripada Grafite",
+    "title": "Master Bedroom with Charcoal Board & Batten Accent Wall",
+    "titlePt": "Suíte Master com Parede de Destaque Frisada Grafite",
     "folder": "Avulso",
     "aspect": 1.333,
     "width": 1600,
     "height": 1200
   },
   {
-    "id": "globe-111",
-    "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-3-jpg.webp",
-    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-3-jpg-thumb.webp",
+    "id": "globe-104",
+    "src": "/images/gallery/full/avulso-photo-2026-05-23-19-46-11-4-jpg.webp",
+    "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-19-46-11-4-jpg-thumb.webp",
     "category": "living",
-    "title": "Great Room Fireplace Wall with Custom Built-ins",
-    "titlePt": "Parede da Lareira com Marcenaria e Nichos",
+    "title": "Great Room Charcoal Fireplace & Entertainment Center",
+    "titlePt": "Parede da Lareira e Painel de TV Sob Medida",
     "folder": "Avulso",
-    "aspect": 1.333,
-    "width": 1600,
-    "height": 1200
+    "aspect": 0.75,
+    "width": 1200,
+    "height": 1600
   },
   {
-    "id": "globe-112",
+    "id": "globe-105",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-27-08-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-27-08-jpg-thumb.webp",
     "category": "living",
@@ -1358,7 +1274,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-113",
+    "id": "globe-106",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-27-08-6-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-27-08-6-jpg-thumb.webp",
     "category": "living",
@@ -1370,7 +1286,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-114",
+    "id": "globe-107",
     "src": "/images/gallery/full/erick-img-0515-jpg.webp",
     "thumb": "/images/gallery/thumbs/erick-img-0515-jpg-thumb.webp",
     "category": "living",
@@ -1382,7 +1298,7 @@ export const galleryItems = [
     "height": 5712
   },
   {
-    "id": "globe-115",
+    "id": "globe-108",
     "src": "/images/gallery/full/erick-img-0516-jpg.webp",
     "thumb": "/images/gallery/thumbs/erick-img-0516-jpg-thumb.webp",
     "category": "living",
@@ -1394,7 +1310,7 @@ export const galleryItems = [
     "height": 5712
   },
   {
-    "id": "globe-116",
+    "id": "globe-109",
     "src": "/images/gallery/full/erick-img-0518-jpg.webp",
     "thumb": "/images/gallery/thumbs/erick-img-0518-jpg-thumb.webp",
     "category": "living",
@@ -1406,7 +1322,7 @@ export const galleryItems = [
     "height": 5712
   },
   {
-    "id": "globe-117",
+    "id": "globe-110",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-jpg-thumb.webp",
     "category": "living",
@@ -1418,7 +1334,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-118",
+    "id": "globe-111",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-4-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-4-jpg-thumb.webp",
     "category": "living",
@@ -1430,7 +1346,19 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-119",
+    "id": "globe-112",
+    "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-10-jpg.webp",
+    "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-10-jpg-thumb.webp",
+    "category": "living",
+    "title": "Oceanfront Suite with Vaulted Ceiling & Pool Vista",
+    "titlePt": "Suíte Frente ao Mar com Teto Catedral e Vista da Piscina",
+    "folder": "Matt",
+    "aspect": 0.75,
+    "width": 1200,
+    "height": 1600
+  },
+  {
+    "id": "globe-113",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-11-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-11-jpg-thumb.webp",
     "category": "living",
@@ -1442,7 +1370,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-120",
+    "id": "globe-114",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-14-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-14-jpg-thumb.webp",
     "category": "living",
@@ -1454,7 +1382,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-121",
+    "id": "globe-115",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-17-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-17-jpg-thumb.webp",
     "category": "living",
@@ -1466,7 +1394,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-122",
+    "id": "globe-116",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-18-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-18-jpg-thumb.webp",
     "category": "living",
@@ -1478,7 +1406,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-123",
+    "id": "globe-117",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-00-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-00-jpg-thumb.webp",
     "category": "living",
@@ -1490,7 +1418,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-124",
+    "id": "globe-118",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-00-3-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-00-3-jpg-thumb.webp",
     "category": "living",
@@ -1502,7 +1430,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-125",
+    "id": "globe-119",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-00-4-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-00-4-jpg-thumb.webp",
     "category": "living",
@@ -1514,7 +1442,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-126",
+    "id": "globe-120",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-00-5-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-00-5-jpg-thumb.webp",
     "category": "living",
@@ -1526,7 +1454,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-127",
+    "id": "globe-121",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-00-7-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-00-7-jpg-thumb.webp",
     "category": "living",
@@ -1538,7 +1466,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-128",
+    "id": "globe-122",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-39-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-39-jpg-thumb.webp",
     "category": "living",
@@ -1550,7 +1478,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-129",
+    "id": "globe-123",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-45-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-45-jpg-thumb.webp",
     "category": "living",
@@ -1562,7 +1490,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-130",
+    "id": "globe-124",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-49-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-49-jpg-thumb.webp",
     "category": "living",
@@ -1574,7 +1502,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-131",
+    "id": "globe-125",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-29-57-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-29-57-jpg-thumb.webp",
     "category": "living",
@@ -1586,7 +1514,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-132",
+    "id": "globe-126",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-30-04-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-30-04-jpg-thumb.webp",
     "category": "living",
@@ -1598,7 +1526,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-133",
+    "id": "globe-127",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-30-08-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-30-08-jpg-thumb.webp",
     "category": "living",
@@ -1610,7 +1538,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-134",
+    "id": "globe-128",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-30-11-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-30-11-jpg-thumb.webp",
     "category": "living",
@@ -1622,7 +1550,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-135",
+    "id": "globe-129",
     "src": "/images/gallery/full/sarasota-dsc05352-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-dsc05352-jpeg-thumb.webp",
     "category": "commercial",
@@ -1634,7 +1562,7 @@ export const galleryItems = [
     "height": 3804
   },
   {
-    "id": "globe-136",
+    "id": "globe-130",
     "src": "/images/gallery/full/sarasota-dsc05354-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-dsc05354-jpeg-thumb.webp",
     "category": "commercial",
@@ -1646,7 +1574,7 @@ export const galleryItems = [
     "height": 3665
   },
   {
-    "id": "globe-137",
+    "id": "globe-131",
     "src": "/images/gallery/full/sarasota-dsc05357-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-dsc05357-jpeg-thumb.webp",
     "category": "commercial",
@@ -1658,7 +1586,7 @@ export const galleryItems = [
     "height": 3661
   },
   {
-    "id": "globe-138",
+    "id": "globe-132",
     "src": "/images/gallery/full/sarasota-dsc05362-jpeg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-dsc05362-jpeg-thumb.webp",
     "category": "commercial",
@@ -1670,7 +1598,7 @@ export const galleryItems = [
     "height": 3795
   },
   {
-    "id": "globe-139",
+    "id": "globe-133",
     "src": "/images/gallery/full/sarasota-photo-2026-10-07-12-41-39-2-jpg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-photo-2026-10-07-12-41-39-2-jpg-thumb.webp",
     "category": "commercial",
@@ -1682,7 +1610,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-140",
+    "id": "globe-134",
     "src": "/images/gallery/full/9005-photo-2026-05-23-19-57-59-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-19-57-59-jpg-thumb.webp",
     "category": "framing",
@@ -1694,7 +1622,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-141",
+    "id": "globe-135",
     "src": "/images/gallery/full/9005-photo-2026-05-23-19-59-21-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-19-59-21-jpg-thumb.webp",
     "category": "framing",
@@ -1706,7 +1634,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-142",
+    "id": "globe-136",
     "src": "/images/gallery/full/9005-photo-2026-05-23-20-01-11-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-20-01-11-jpg-thumb.webp",
     "category": "framing",
@@ -1718,7 +1646,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-143",
+    "id": "globe-137",
     "src": "/images/gallery/full/9005-photo-2026-05-23-20-01-11-2-jpg.webp",
     "thumb": "/images/gallery/thumbs/9005-photo-2026-05-23-20-01-11-2-jpg-thumb.webp",
     "category": "framing",
@@ -1730,7 +1658,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-144",
+    "id": "globe-138",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-2-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-2-jpg-thumb.webp",
     "category": "framing",
@@ -1742,7 +1670,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-145",
+    "id": "globe-139",
     "src": "/images/gallery/full/avulso-photo-2026-05-23-21-28-03-8-jpg.webp",
     "thumb": "/images/gallery/thumbs/avulso-photo-2026-05-23-21-28-03-8-jpg-thumb.webp",
     "category": "framing",
@@ -1754,7 +1682,19 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-146",
+    "id": "globe-140",
+    "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-7-jpg.webp",
+    "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-7-jpg-thumb.webp",
+    "category": "framing",
+    "title": "Interior Plaster Finishing & Window Framing Underway",
+    "titlePt": "Fase de Acabamento em Gesso e Vãos de Janela",
+    "folder": "Matt",
+    "aspect": 1.333,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "id": "globe-141",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-13-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-13-jpg-thumb.webp",
     "category": "framing",
@@ -1766,7 +1706,7 @@ export const galleryItems = [
     "height": 1600
   },
   {
-    "id": "globe-147",
+    "id": "globe-142",
     "src": "/images/gallery/full/matt-photo-2026-05-23-21-28-59-20-jpg.webp",
     "thumb": "/images/gallery/thumbs/matt-photo-2026-05-23-21-28-59-20-jpg-thumb.webp",
     "category": "framing",
@@ -1778,7 +1718,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-148",
+    "id": "globe-143",
     "src": "/images/gallery/full/sarasota-photo-2026-10-07-12-48-38-jpg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-photo-2026-10-07-12-48-38-jpg-thumb.webp",
     "category": "framing",
@@ -1790,7 +1730,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-149",
+    "id": "globe-144",
     "src": "/images/gallery/full/sarasota-photo-2026-10-07-12-48-38-2-jpg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-photo-2026-10-07-12-48-38-2-jpg-thumb.webp",
     "category": "framing",
@@ -1802,7 +1742,7 @@ export const galleryItems = [
     "height": 1200
   },
   {
-    "id": "globe-150",
+    "id": "globe-145",
     "src": "/images/gallery/full/sarasota-photo-2026-10-07-12-48-38-4-jpg.webp",
     "thumb": "/images/gallery/thumbs/sarasota-photo-2026-10-07-12-48-38-4-jpg-thumb.webp",
     "category": "framing",
