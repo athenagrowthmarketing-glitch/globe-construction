@@ -24,5 +24,9 @@
 - **Primary Market:** Odessa (33556), Trinity, Wesley Chapel, New Port Richey, Land O' Lakes (Pasco County).
 - **Secondary Market:** Tampa, South Tampa, Westchase, Brandon, Riverview, Plant City (Hillsborough County); Clearwater, St. Petersburg, Palm Harbor, Safety Harbor (Pinellas County); Spring Hill, Brooksville (Hernando County); Sarasota, Lakewood Ranch (Sarasota/Manatee Counties).
 
+## Project Gallery (100% Real Client Work)
+- **Direct Gallery:** https://site-globe-self.vercel.app/gallery
+- 176 verified high-resolution job site photos categorized into Kitchens, Bathrooms, Flooring & Tile, Exterior & Lanais, Living & Interiors, Commercial, and Framing & In-Progress.
+
 ## Online Estimate & Inquiries
 - Free consultation form available at: https://site-globe-self.vercel.app/

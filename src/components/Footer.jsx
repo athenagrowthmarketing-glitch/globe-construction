@@ -92,6 +92,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-white/70">
               <li>
+                <Link to="/gallery" className="text-[#CBB890] hover:text-white font-semibold transition-colors flex items-center gap-1.5">
+                  <span>Project Gallery</span>
+                  <span className="text-[10px] px-1 rounded bg-[#CBB890]/20 text-[#CBB890]">176</span>
+                </Link>
+              </li>
+              <li>
                 <button
                   onClick={() => handleAnchorClick('#portfolio')}
                   className="hover:text-[#CBB890] transition-colors text-left"

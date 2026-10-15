@@ -13,6 +13,7 @@ import FullHomeRemodelingPage from './pages/FullHomeRemodelingPage';
 import HomeAdditionsPage from './pages/HomeAdditionsPage';
 import CommercialRemodelingPage from './pages/CommercialRemodelingPage';
 import ServiceAreasPage from './pages/ServiceAreasPage';
+import GalleryPage from './pages/GalleryPage';
 import { scrollToEstimate } from './utils/scroll';
 
 export default function App() {
@@ -36,6 +37,8 @@ export default function App() {
           <Route path="/home-additions" element={<HomeAdditionsPage />} />
           <Route path="/commercial-remodeling" element={<CommercialRemodelingPage />} />
           <Route path="/service-areas" element={<ServiceAreasPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/galeria" element={<GalleryPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

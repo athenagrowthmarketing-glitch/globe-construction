@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, ChevronDown, Menu, X, ArrowRight, Shield } from 'lucide-react';
+import { Phone, ChevronDown, Menu, X, ArrowRight, Shield, Camera } from 'lucide-react';
 import { scrollToEstimate } from '../utils/scroll';
 
 export default function Navbar() {
@@ -134,6 +134,15 @@ export default function Navbar() {
             )}
           </div>
 
+          <Link
+            to="/gallery"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#CBB890] hover:text-white px-3 py-1.5 rounded-lg bg-[#CBB890]/15 hover:bg-[#CBB890]/25 border border-[#CBB890]/35 transition-all shadow-sm"
+          >
+            <Camera className="w-3.5 h-3.5" />
+            <span>Gallery</span>
+            <span className="text-[10px] font-mono px-1 rounded bg-[#000D13]/40 text-[#CBB890]">176</span>
+          </Link>
+
           <button
             onClick={() => handleNavClick('#portfolio')}
             className="text-sm font-medium text-white/90 hover:text-[#CBB890] transition-colors"
@@ -212,6 +221,35 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#000D13] border-b border-[#CBB890]/25 px-5 py-6 space-y-4 animate-in slide-in-from-top duration-300 max-h-[85vh] overflow-y-auto">
+          {/* HIGH-IMPACT PROMINENT GALLERY CARD (CLIENT TOP PRIORITY) */}
+          <Link
+            to="/gallery"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block p-4 rounded-xl bg-gradient-to-r from-[#CBB890]/25 via-[#CBB890]/15 to-[#CBB890]/5 border-2 border-[#CBB890] shadow-xl group transition-all"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-xl bg-[#CBB890] text-[#000D13] shadow-md">
+                  <Camera className="w-6 h-6" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-base font-extrabold text-white group-hover:text-[#CBB890] transition-colors">
+                      Galeria / Gallery
+                    </span>
+                    <span className="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-full bg-[#CBB890] text-[#000D13]">
+                      176 Fotos
+                    </span>
+                  </div>
+                  <p className="text-xs text-white/80 font-medium">
+                    Cozinhas, Banheiros, Pisos, Exterior &amp; Obras
+                  </p>
+                </div>
+              </div>
+              <ArrowRight className="w-5 h-5 text-[#CBB890] group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
+
           <div className="space-y-2">
             <span className="text-[11px] font-bold tracking-widest uppercase text-[#CBB890]">
               Remodeling Services
@@ -235,6 +273,17 @@ export default function Navbar() {
           </div>
 
           <div className="pt-4 border-t border-white/10 space-y-3">
+            <Link
+              to="/gallery"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-between w-full text-left text-sm font-semibold text-[#CBB890] hover:text-white py-1"
+            >
+              <span className="flex items-center gap-2">
+                <Camera className="w-4 h-4" />
+                <span>Galeria de Obras (Todas as Fotos)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
             <button
               onClick={() => handleNavClick('#portfolio')}
               className="block w-full text-left text-sm font-medium text-white/90 hover:text-[#CBB890]"
