@@ -25,8 +25,8 @@ export default function Footer() {
             <Link to="/" className="flex items-center group">
               <img
                 src="/images/globe-logo-transparent.png"
-                alt="Globe Logo"
-                className="h-11 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+                alt="Globe Construction"
+                className="h-12 sm:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
               />
             </Link>
 
