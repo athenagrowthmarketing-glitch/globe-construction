@@ -65,7 +65,36 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
         });
       }
 
-      // Send to serverless API endpoint
+      const webhookPayload = {
+        name: formData.name,
+        fullName: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        service: formData.service,
+        zip: formData.zip,
+        postalCode: formData.zip,
+        timeline: formData.timeline,
+        details: formData.details,
+        notes: formData.details,
+        company: 'Globe Construction',
+        source: 'Globe Construction Website Estimate Form',
+        submittedAt: new Date().toISOString(),
+      };
+
+      // 1. Direct Webhook to LeadConnector / GoHighLevel
+      const webhookUrl = 'https://services.leadconnectorhq.com/hooks/wr9YVe8FDcTksUup9qpu/webhook-trigger/b275afc3-b423-4388-b0d2-4dff3850cbcc';
+      try {
+        fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          mode: 'no-cors',
+          body: JSON.stringify(webhookPayload),
+        }).catch((err) => console.warn('Webhook background dispatch:', err));
+      } catch (e) {
+        console.warn('Webhook call note:', e);
+      }
+
+      // 2. Send to serverless API endpoint
       const response = await fetch('/api/estimate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

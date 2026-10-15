@@ -49,14 +49,17 @@ export default async function handler(req, res) {
     const lastName = nameParts.slice(1).join(' ') || '';
 
     const leadData = {
+      name,
       fullName: name,
       firstName,
       lastName,
       phone,
       email: email || '',
+      zip: zip || '',
       postalCode: zip || '',
       service: service || 'Kitchen Remodeling',
       timeline: timeline || 'Planning Phase',
+      details: details || '',
       notes: details || '',
       company: 'Globe Construction',
       source: 'Globe Construction Website Lead',
@@ -65,6 +68,19 @@ export default async function handler(req, res) {
     };
 
     console.log('[LEAD RECEIVED]', leadData);
+
+    // Forward lead directly to LeadConnector / GoHighLevel Webhook
+    const webhookUrl = 'https://services.leadconnectorhq.com/hooks/wr9YVe8FDcTksUup9qpu/webhook-trigger/b275afc3-b423-4388-b0d2-4dff3850cbcc';
+    try {
+      await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(leadData),
+      });
+      console.log('[WEBHOOK SENT] Successfully dispatched to LeadConnector');
+    } catch (whErr) {
+      console.error('[WEBHOOK ERROR] Failed to send to LeadConnector:', whErr);
+    }
 
     return res.status(200).json({
       success: true,

@@ -96,18 +96,14 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-[#FAF9F6] text-[#1A2128]">
       {/* Hero Header */}
-      <section className="relative bg-[#000D13] text-white pt-16 pb-12 sm:pt-20 sm:pb-16 border-b border-[#CBB890]/20">
+      <section className="relative bg-[#000D13] text-white pt-12 pb-10 sm:pt-16 sm:pb-12 border-b border-[#CBB890]/20">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0A2635] via-[#000D13] to-[#000D13] opacity-80" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#CBB890]/15 border border-[#CBB890]/30 text-[#CBB890] text-xs font-semibold uppercase tracking-wider mb-4">
-            <Camera className="w-3.5 h-3.5" />
-            <span>100% Real Work • Zero Stock Photos</span>
-          </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-3">
             Project Gallery <span className="text-[#CBB890] font-serif italic">&amp; Works</span>
           </h1>
-          <p className="text-base sm:text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Direct from our job sites across Tampa Bay, Odessa, and Sarasota. Tap any category below to inspect our real craftsmanship.
+          <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
+            Real completed projects across Odessa, Tampa Bay, and Sarasota. Tap any category below to filter.
           </p>
         </div>
       </section>
@@ -152,24 +148,24 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="max-w-7xl mx-auto px-3 sm:px-6 py-8 sm:py-12">
+      <section className="max-w-7xl mx-auto px-3 sm:px-6 py-6 sm:py-10">
         {/* Count Bar */}
-        <div className="flex items-center justify-between mb-6 pb-3 border-b border-black/10">
+        <div className="flex items-center justify-between mb-5 pb-2.5 border-b border-black/10">
           <div className="text-xs sm:text-sm text-neutral-600 font-medium">
-            Showing <strong className="text-[#000D13]">{filteredItems.length}</strong> authentic photos
+            Showing <strong className="text-[#000D13]">{filteredItems.length}</strong> photos
           </div>
           <div className="text-xs text-neutral-500 hidden sm:block">
-            Tap any photo to view in high definition
+            Tap any photo to view full screen
           </div>
         </div>
 
-        {/* Responsive Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4">
+        {/* Responsive Pure-Photo Grid - NO GREY OVERLAYS */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3.5">
           {filteredItems.map((item, index) => (
             <div
               key={item.id}
               onClick={() => setLightboxIndex(index)}
-              className="group relative bg-[#000D13] rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:-translate-y-1 aspect-[4/3] sm:aspect-[4/3]"
+              className="group relative bg-[#051821] rounded-xl overflow-hidden shadow-sm hover:shadow-xl border border-black/5 hover:border-[#CBB890]/40 transition-all duration-300 cursor-pointer transform hover:-translate-y-0.5 aspect-[4/3]"
             >
               <img
                 src={item.thumb}
@@ -178,23 +174,9 @@ export default function GalleryPage() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 sm:p-4">
-                <span className="text-[10px] uppercase font-bold tracking-wider text-[#CBB890] mb-0.5">
-                  {item.category}
-                </span>
-                <p className="text-xs sm:text-sm font-semibold text-white line-clamp-2 leading-snug">
-                  {item.title}
-                </p>
-                <div className="mt-2 flex items-center gap-1 text-[11px] text-[#CBB890] font-medium">
-                  <Maximize2 className="w-3 h-3" />
-                  <span>Tap to view</span>
-                </div>
-              </div>
-
-              {/* Subtle Corner Badge for Mobile Tap Affordance */}
-              <div className="absolute bottom-2 right-2 sm:hidden p-1.5 rounded-full bg-black/60 text-white/80 backdrop-blur-sm">
-                <Maximize2 className="w-3 h-3" />
+              {/* Minimal Subtle Expand Indicator on Hover/Tap (never covers photo with grey) */}
+              <div className="absolute top-2 right-2 p-1.5 rounded-full bg-black/50 text-white/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <Maximize2 className="w-3.5 h-3.5" />
               </div>
             </div>
           ))}
