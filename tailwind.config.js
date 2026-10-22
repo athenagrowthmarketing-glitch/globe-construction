@@ -25,6 +25,7 @@ export default {
         'stone-border': '#E5DFD7',
       },
       fontFamily: {
+        montserrat: ['"Montserrat"', 'sans-serif'],
         poppins: ['"Poppins"', 'sans-serif'],
         heading: ['"Plus Jakarta Sans"', 'sans-serif'],
         serif: ['"Plus Jakarta Sans"', 'sans-serif'],
