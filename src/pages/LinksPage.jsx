@@ -17,6 +17,8 @@ import {
   UtensilsCrossed,
   Bath,
   Home,
+  QrCode,
+  Download,
 } from 'lucide-react';
 
 const RECAPTCHA_SITE_KEY = '6LfOpRctAAAAAOJmBcplr60CA0G3y-BnVhXrrFE-';
@@ -25,6 +27,7 @@ const LEADCONNECTOR_WEBHOOK =
 
 export default function LinksPage() {
   const [isEstimateModalOpen, setIsEstimateModalOpen] = useState(false);
+  const [isQrModalOpen, setIsQrModalOpen] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
   const [showServices, setShowServices] = useState(false);
 
@@ -165,11 +168,20 @@ export default function LinksPage() {
       {/* Main Container */}
       <div className="relative z-10 w-full max-w-[460px] mx-auto px-4 sm:px-5 py-8 sm:py-10 flex-1 flex flex-col justify-between">
         <div>
-          {/* Top Share Bar */}
-          <div className="flex items-center justify-end mb-4">
+          {/* Top Utilities: QR Code + Share */}
+          <div className="flex items-center justify-end gap-2 mb-4">
+            <button
+              onClick={() => setIsQrModalOpen(true)}
+              className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.14em] text-white/60 hover:text-white bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 px-3 py-1.5 rounded-full transition-colors active:scale-95 cursor-pointer font-medium"
+              title="Show QR Code"
+            >
+              <QrCode className="w-3.5 h-3.5 text-[#CBB890]" />
+              <span>QR Code</span>
+            </button>
+
             <button
               onClick={handleShare}
-              className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.14em] text-white/50 hover:text-white bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 px-3 py-1.5 rounded-full transition-colors active:scale-95 cursor-pointer font-medium"
+              className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.14em] text-white/60 hover:text-white bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 px-3 py-1.5 rounded-full transition-colors active:scale-95 cursor-pointer font-medium"
               title="Share profile"
             >
               {copiedLink ? (
@@ -305,7 +317,7 @@ export default function LinksPage() {
               <ChevronRight className="w-4 h-4 text-white/30 group-hover:text-white transition-colors" />
             </a>
 
-            {/* 5. Project Gallery with Camera Icon (Clean, no photo preview) */}
+            {/* 5. Project Gallery with Camera Icon */}
             <Link
               to="/gallery"
               className="w-full flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-[#091015] hover:bg-[#0E171E] border border-white/10 hover:border-[#CBB890]/40 transition-all duration-150 text-white group active:scale-[0.99]"
@@ -422,6 +434,27 @@ export default function LinksPage() {
               </div>
               <ChevronRight className="w-4 h-4 text-white/30 group-hover:text-white transition-colors" />
             </Link>
+
+            {/* 9. Digital Business Card / QR Code Card */}
+            <button
+              onClick={() => setIsQrModalOpen(true)}
+              className="w-full flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-[#091015] hover:bg-[#0E171E] border border-white/10 hover:border-[#CBB890]/40 transition-all duration-150 text-white group active:scale-[0.99] cursor-pointer"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-[#CBB890] flex items-center justify-center shrink-0">
+                  <QrCode className="w-5 h-5" />
+                </div>
+                <div className="text-left">
+                  <div className="text-[12px] sm:text-[13px] font-semibold uppercase tracking-[0.1em] text-white group-hover:text-[#CBB890] transition-colors">
+                    Digital Business Card (QR)
+                  </div>
+                  <div className="text-[11px] text-white/45 font-medium tracking-wide">
+                    Tap to view or save QR code
+                  </div>
+                </div>
+              </div>
+              <ChevronRight className="w-4 h-4 text-white/30 group-hover:text-white transition-colors" />
+            </button>
           </div>
 
           {/* Social Icons Bar - Minimalist Footer Strip */}
@@ -660,6 +693,83 @@ export default function LinksPage() {
                 </p>
               </form>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* QR Code Modal for In-Person Sharing & Direct Download */}
+      {isQrModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm animate-in fade-in duration-150 font-montserrat">
+          <div className="relative w-full max-w-sm bg-[#091015] border border-white/15 rounded-2xl shadow-2xl p-6 sm:p-7 text-white text-center">
+            {/* Close Button */}
+            <button
+              onClick={() => setIsQrModalOpen(false)}
+              className="absolute top-4 right-4 p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors cursor-pointer"
+              title="Close"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {/* Header */}
+            <div className="mb-4 pt-1">
+              <div className="inline-flex items-center justify-center p-2 rounded-xl bg-[#060A0D] border border-[#CBB890]/30 shadow-md mb-2.5">
+                <img
+                  src="/images/globe-logo-transparent.png"
+                  alt="Globe Construction"
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
+              <h3 className="text-base font-bold uppercase tracking-[0.12em] text-white">
+                Globe Construction
+              </h3>
+              <p className="text-[10px] text-[#CBB890] uppercase tracking-[0.2em] font-semibold mt-0.5">
+                Digital Business Card
+              </p>
+            </div>
+
+            {/* High-Contrast Crisp QR Code Frame */}
+            <div className="p-3.5 bg-white rounded-2xl shadow-2xl inline-block my-2 border border-[#CBB890]/40">
+              <img
+                src="/images/globe-qr-code.png"
+                alt="Globe Construction QR Code"
+                className="w-48 h-48 sm:w-52 sm:h-52 object-contain block mx-auto"
+              />
+            </div>
+
+            <p className="text-xs text-white/60 mt-3 max-w-[260px] mx-auto leading-relaxed">
+              Point any smartphone camera to scan and open this profile instantly.
+            </p>
+
+            {/* Action Buttons: Save Image & Copy Link */}
+            <div className="grid grid-cols-2 gap-2 mt-5">
+              <a
+                href="/images/globe-qr-code.png"
+                download="globe-construction-qr.png"
+                className="py-2.5 px-3 rounded-lg bg-[#CBB890] hover:bg-[#D5C49F] text-[#060A0D] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Save QR</span>
+              </a>
+
+              <button
+                onClick={() => {
+                  copyToClipboard(window.location.href);
+                }}
+                className="py-2.5 px-3 rounded-lg bg-white/10 hover:bg-white/15 text-white font-medium text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors border border-white/10 cursor-pointer"
+              >
+                {copiedLink ? (
+                  <>
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#CBB890]" />
+                    <span className="text-[#CBB890]">Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <Share2 className="w-3.5 h-3.5" />
+                    <span>Copy Link</span>
+                  </>
+                )}
+              </button>
+            </div>
           </div>
         </div>
       )}
