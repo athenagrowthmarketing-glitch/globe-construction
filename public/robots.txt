@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://site-globe-self.vercel.app/sitemap.xml
+Sitemap: https://www.globeconstructionfl.com/sitemap.xml
