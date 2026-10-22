@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -14,19 +14,23 @@ import HomeAdditionsPage from './pages/HomeAdditionsPage';
 import CommercialRemodelingPage from './pages/CommercialRemodelingPage';
 import ServiceAreasPage from './pages/ServiceAreasPage';
 import GalleryPage from './pages/GalleryPage';
+import LinksPage from './pages/LinksPage';
 import { scrollToEstimate } from './utils/scroll';
 
 export default function App() {
+  const location = useLocation();
+  const isLinktreePage = ['/links', '/bio', '/linktree'].includes(location.pathname);
+
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF9F6] text-[#1A2128]">
+    <div className={`min-h-screen flex flex-col ${isLinktreePage ? 'bg-[#000D13]' : 'bg-[#FAF9F6] text-[#1A2128]'}`}>
       {/* Scroll Viewport to Top on Route Transitions */}
       <ScrollToTop />
 
       {/* Top Announcement Bar */}
-      <Topbar />
+      {!isLinktreePage && <Topbar />}
 
       {/* Sticky Luxury Navbar */}
-      <Navbar />
+      {!isLinktreePage && <Navbar />}
 
       <main className="flex-1">
         <Routes>
@@ -39,15 +43,18 @@ export default function App() {
           <Route path="/service-areas" element={<ServiceAreasPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/galeria" element={<GalleryPage />} />
+          <Route path="/links" element={<LinksPage />} />
+          <Route path="/bio" element={<LinksPage />} />
+          <Route path="/linktree" element={<LinksPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
 
       {/* Architectural Deep Navy Footer with Athena Credit */}
-      <Footer />
+      {!isLinktreePage && <Footer />}
 
       {/* Mobile Sticky Action Bar */}
-      <MobileStickyBar onOpenEstimate={scrollToEstimate} />
+      {!isLinktreePage && <MobileStickyBar onOpenEstimate={scrollToEstimate} />}
     </div>
   );
 }
