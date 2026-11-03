@@ -225,7 +225,34 @@ export default function LinksPage() {
 
           {/* Action Links - Premium, Clean, with Dedicated Icon for Each */}
           <div className="space-y-2.5">
-            {/* 1. Request Estimate - Primary Gold Card with Clipboard/Estimate Icon */}
+            {/* 1. Request Estimate - Direct Link to WhatsApp during Site Approval (No form / popup) */}
+            <a
+              href="https://wa.me/18133944528?text=Hello%20Globe%20Construction,%20I%20would%20like%20to%20request%20a%20project%20estimate."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-[#CBB890] hover:bg-[#D5C49F] text-[#060A0D] transition-all duration-150 cursor-pointer shadow-md group active:scale-[0.99]"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-10 h-10 rounded-lg bg-[#060A0D]/10 flex items-center justify-center shrink-0 text-[#060A0D]">
+                  <ClipboardList className="w-5 h-5" />
+                </div>
+                <div className="text-left">
+                  <div className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.1em] text-[#060A0D]">
+                    Request An Estimate
+                  </div>
+                  <div className="text-[11px] text-[#060A0D]/75 font-medium tracking-wide">
+                    Direct Contact via WhatsApp
+                  </div>
+                </div>
+              </div>
+              <ChevronRight className="w-4 h-4 text-[#060A0D]/60 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+
+            {/* ========================================================
+                MODAL TRIGGER BUTTON TEMPORARILY COMMENTED OUT FOR SITE APPROVAL
+                (UNCOMMENT TO RESTORE MODAL POPUP BUTTON)
+               ======================================================== */}
+            {/*
             <button
               onClick={() => setIsEstimateModalOpen(true)}
               className="w-full flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-[#CBB890] hover:bg-[#D5C49F] text-[#060A0D] transition-all duration-150 cursor-pointer shadow-md group active:scale-[0.99]"
@@ -245,6 +272,7 @@ export default function LinksPage() {
               </div>
               <ChevronRight className="w-4 h-4 text-[#060A0D]/60 group-hover:translate-x-0.5 transition-transform" />
             </button>
+            */}
 
             {/* 2. WhatsApp Direct with Official WhatsApp Icon */}
             <a
@@ -525,11 +553,14 @@ export default function LinksPage() {
         </div>
       </div>
 
-      {/* Clean Montserrat Estimate Modal */}
+      {/* ========================================================
+          ESTIMATE FORM POPUP MODAL TEMPORARILY COMMENTED OUT FOR SITE APPROVAL
+          (UNCOMMENT THIS BLOCK TO REACTIVATE MODAL POPUP AFTER APPROVAL)
+         ======================================================== */}
+      {/*
       {isEstimateModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-150 font-montserrat">
           <div className="relative w-full max-w-lg bg-[#091015] border border-white/15 rounded-xl shadow-2xl p-6 sm:p-7 text-white overflow-hidden max-h-[90vh] overflow-y-auto">
-            {/* Modal Header */}
             <div className="flex items-start justify-between pb-4 border-b border-white/10 mb-5">
               <div>
                 <span className="text-[10px] font-semibold text-[#CBB890] uppercase tracking-[0.16em]">
@@ -696,6 +727,7 @@ export default function LinksPage() {
           </div>
         </div>
       )}
+      */}
 
       {/* QR Code Modal for In-Person Sharing & Direct Download */}
       {isQrModalOpen && (
