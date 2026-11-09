@@ -38,14 +38,14 @@ export default function KitchenRemodelingPage() {
       img: '/images/kitchen-detail.jpg',
     },
     {
-      title: 'Transitional & Contrast Islands',
-      desc: 'Moody charcoal and rich espresso base cabinetry paired with luminous perimeter quartz and architectural custom range hoods.',
-      img: '/images/kitchen-charcoal.jpg',
+      title: 'Architectural Lighting & Layouts',
+      desc: 'Layered warm ambient lighting, statement pendant lights over central prep islands, and under-cabinet task illumination.',
+      img: '/images/hero-kitchen.jpg',
     },
     {
-      title: 'Spanish & Mediterranean Accents',
-      desc: 'Handcrafted plaster bell hoods, zellige or herringbone backsplashes, and authentic Florida coastal character.',
-      img: '/images/kitchen-spanish.jpg',
+      title: 'Gourmet Chef Pantries & Islands',
+      desc: 'Oversized center islands with built-in prep sinks, concealed slide-out recycling centers, and custom walk-in pantry shelving.',
+      img: '/images/kitchen-island-suburban.jpg',
     },
   ];
 

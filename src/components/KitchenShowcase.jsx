@@ -92,8 +92,8 @@ export default function KitchenShowcase({ onOpenEstimate }) {
               </div>
               <div className="rounded-xl overflow-hidden border border-[#E5DFD7] aspect-[4/3] image-zoom-container">
                 <img
-                  src="/images/kitchen-charcoal.jpg"
-                  alt="Transitional charcoal luxury kitchen"
+                  src="/images/kitchen-island.jpg"
+                  alt="Transitional luxury kitchen with island and custom millwork"
                   className="w-full h-full object-cover"
                 />
               </div>
