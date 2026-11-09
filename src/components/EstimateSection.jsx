@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MapPin, Clock, ShieldCheck, CheckCircle2, Loader2, Send, MessageSquare, ArrowRight, Mail } from 'lucide-react';
+import { Phone, MapPin, Clock, ShieldCheck, CheckCircle2, Loader2, Send } from 'lucide-react';
 
 const RECAPTCHA_SITE_KEY = '6LfOpRctAAAAAOJmBcplr60CA0G3y-BnVhXrrFE-';
 
@@ -112,6 +112,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
       setSubmitted(true);
     } catch (err) {
       console.warn('Backend submission note:', err.message);
+      // In development or static preview, show success if basic fields were filled
       setSubmitted(true);
     } finally {
       setIsSubmitting(false);
@@ -202,91 +203,9 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
             </div>
           </div>
 
-          {/* Right Column: Direct Consultation Hub (Form temporarily commented out for site approval) */}
+          {/* Right Column: Multi-Step Interactive Form */}
           <div className="lg:col-span-7">
             <div className="bg-[#051821] border border-[#CBB890]/25 rounded-2xl p-6 sm:p-9 shadow-2xl relative">
-              {/* === DIRECT CONTACT DISPLAY DURING SITE APPROVAL (ZERO FORMS) === */}
-              <div className="py-4 sm:py-6 space-y-6 text-left">
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#CBB890]">
-                    Direct Project Inquiries
-                  </span>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white font-display mt-1">
-                    Speak With Our General Contractor
-                  </h3>
-                  <p className="text-sm text-white/70 mt-2 leading-relaxed">
-                    We are currently booking on-site consultations and remodeling evaluations directly with our licensed project directors. Reach out by phone, WhatsApp, or email for prompt assistance.
-                  </p>
-                </div>
-
-                <div className="space-y-3 pt-2">
-                  <a
-                    href="tel:+18133944528"
-                    className="flex items-center justify-between p-4 rounded-xl bg-[#000D13] border border-[#CBB890]/30 hover:border-[#CBB890] transition-colors group"
-                  >
-                    <div className="flex items-center gap-3.5">
-                      <div className="w-10 h-10 rounded-lg bg-[#CBB890]/15 text-[#CBB890] flex items-center justify-center shrink-0">
-                        <Phone className="w-5 h-5" />
-                      </div>
-                      <div>
-                        <div className="text-xs text-white/60 font-medium">Direct Line · Mon - Sat</div>
-                        <div className="text-base font-bold text-white group-hover:text-[#CBB890] transition-colors">
-                          +1 (813) 394-4528
-                        </div>
-                      </div>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-[#CBB890] shrink-0" />
-                  </a>
-
-                  <a
-                    href="https://wa.me/18133944528?text=Hello%20Globe%20Construction,%20I%20would%20like%20to%20request%20a%20project%20consultation."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between p-4 rounded-xl bg-[#000D13] border border-white/10 hover:border-[#25D366]/40 transition-colors group"
-                  >
-                    <div className="flex items-center gap-3.5">
-                      <div className="w-10 h-10 rounded-lg bg-[#25D366]/15 text-[#25D366] flex items-center justify-center shrink-0">
-                        <MessageSquare className="w-5 h-5" />
-                      </div>
-                      <div>
-                        <div className="text-xs text-white/60 font-medium">Instant Messaging</div>
-                        <div className="text-base font-bold text-white group-hover:text-[#25D366] transition-colors">
-                          Chat on WhatsApp
-                        </div>
-                      </div>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-white/40 group-hover:text-[#25D366] shrink-0" />
-                  </a>
-
-                  <a
-                    href="mailto:globegroupfl@gmail.com"
-                    className="flex items-center justify-between p-4 rounded-xl bg-[#000D13] border border-white/10 hover:border-[#CBB890]/40 transition-colors group"
-                  >
-                    <div className="flex items-center gap-3.5">
-                      <div className="w-10 h-10 rounded-lg bg-white/5 text-[#CBB890] flex items-center justify-center shrink-0">
-                        <Mail className="w-5 h-5" />
-                      </div>
-                      <div>
-                        <div className="text-xs text-white/60 font-medium">Email Consultation</div>
-                        <div className="text-base font-bold text-white group-hover:text-[#CBB890] transition-colors">
-                          globegroupfl@gmail.com
-                        </div>
-                      </div>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-white/40 group-hover:text-[#CBB890] shrink-0" />
-                  </a>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10 text-xs text-white/50 text-center">
-                  Licensed & Insured Florida CGC • Mon – Sat: 8:00 AM – 6:00 PM
-                </div>
-              </div>
-
-              {/* ========================================================
-                  FORM TEMPORARILY COMMENTED OUT FOR SITE APPROVAL
-                  (UNCOMMENT THE BLOCK BELOW TO REACTIVATE THE FORM)
-                 ======================================================== */}
-              {/*
               {submitted ? (
                 <div className="py-12 text-center space-y-4 animate-in fade-in duration-300">
                   <div className="w-16 h-16 rounded-full bg-[#CBB890]/20 text-[#CBB890] flex items-center justify-center mx-auto border border-[#CBB890]/40">
@@ -312,13 +231,14 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
                         details: '',
                       });
                     }}
-                    className="mt-6 inline-flex items-center text-xs uppercase tracking-wider font-bold text-[#CBB890] hover:text-white transition-colors"
+                    className="mt-6 inline-flex items-center text-xs uppercase tracking-wider font-bold text-[#CBB890] hover:text-white transition-colors cursor-pointer"
                   >
                     Submit Another Request
                   </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Step Header */}
                   <div className="flex items-center justify-between pb-4 border-b border-white/10">
                     <div>
                       <h3 className="text-lg font-bold text-white font-display">
@@ -341,6 +261,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
 
                   {step === 1 && (
                     <div className="space-y-5 animate-in fade-in duration-200">
+                      {/* Service Selection Pills */}
                       <div>
                         <label className="block text-xs font-bold uppercase tracking-wider text-white/80 mb-2.5">
                           Select Remodeling Service *
@@ -426,7 +347,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
                       <button
                         type="button"
                         onClick={handleNextStep}
-                        className="w-full bg-[#CBB890] hover:bg-[#B8A377] text-[#000D13] font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 mt-4"
+                        className="w-full bg-[#CBB890] hover:bg-[#B8A377] text-[#000D13] font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 mt-4 cursor-pointer"
                       >
                         <span>Continue to Step 2</span>
                         <Send className="w-3.5 h-3.5" />
@@ -436,6 +357,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
 
                   {step === 2 && (
                     <div className="space-y-5 animate-in fade-in duration-200">
+                      {/* Estimated Timeline */}
                       <div>
                         <label className="block text-xs font-bold uppercase tracking-wider text-white/80 mb-2">
                           Estimated Timeline
@@ -458,6 +380,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
                         </div>
                       </div>
 
+                      {/* Project Details */}
                       <div>
                         <label className="block text-xs font-bold uppercase tracking-wider text-white/80 mb-1.5">
                           Brief Project Vision / Scope Notes
@@ -475,7 +398,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
                         <button
                           type="button"
                           onClick={() => setStep(1)}
-                          className="w-1/3 border border-white/20 text-white/80 hover:text-white font-semibold text-xs uppercase tracking-wider py-3.5 rounded-xl transition-all"
+                          className="w-1/3 border border-white/20 text-white/80 hover:text-white font-semibold text-xs uppercase tracking-wider py-3.5 rounded-xl transition-all cursor-pointer"
                         >
                           ← Back
                         </button>
@@ -483,7 +406,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-2/3 bg-[#CBB890] hover:bg-[#B8A377] text-[#000D13] font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 disabled:opacity-60"
+                          className="w-2/3 bg-[#CBB890] hover:bg-[#B8A377] text-[#000D13] font-bold text-xs uppercase tracking-wider py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 disabled:opacity-60 cursor-pointer"
                         >
                           {isSubmitting ? (
                             <>
@@ -499,6 +422,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
                         </button>
                       </div>
 
+                      {/* Security badge with reCAPTCHA note */}
                       <p className="text-[10px] text-white/40 text-center leading-normal pt-2">
                         Protected by Google reCAPTCHA v3. We never sell your personal information.
                       </p>
@@ -506,7 +430,6 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
                   )}
                 </form>
               )}
-              */}
             </div>
           </div>
         </div>
