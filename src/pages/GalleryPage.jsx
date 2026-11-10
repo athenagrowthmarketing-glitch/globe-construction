@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import {
   Sparkles,
   Camera,
@@ -19,10 +20,36 @@ import { scrollToEstimate } from '../utils/scroll';
 import EstimateSection from '../components/EstimateSection';
 
 export default function GalleryPage() {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const catParam = searchParams.get('category');
+  const initialCategory = catParam && galleryCategories.some((c) => c.id === catParam) ? catParam : 'all';
+  const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [lightboxIndex, setLightboxIndex] = useState(null);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
+
+  // Sync state if URL query param changes
+  useEffect(() => {
+    const cat = searchParams.get('category');
+    if (cat && galleryCategories.some((c) => c.id === cat)) {
+      setSelectedCategory(cat);
+    } else if (!cat) {
+      setSelectedCategory('all');
+    }
+  }, [searchParams]);
+
+  // Handle category change and update URL parameter
+  const handleCategoryChange = (id) => {
+    setSelectedCategory(id);
+    setLightboxIndex(null);
+    if (id === 'all') {
+      const next = new URLSearchParams(searchParams);
+      next.delete('category');
+      setSearchParams(next, { replace: true });
+    } else {
+      setSearchParams({ category: id }, { replace: true });
+    }
+  };
 
   // Filter items based on active category
   const filteredItems = useMemo(() => {
@@ -129,8 +156,7 @@ export default function GalleryPage() {
                 <button
                   key={cat.id}
                   onClick={() => {
-                    setSelectedCategory(cat.id);
-                    setLightboxIndex(null);
+                    handleCategoryChange(cat.id);
                   }}
                   className={`shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
