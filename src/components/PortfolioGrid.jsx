@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { MapPin, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { MapPin, ArrowUpRight, Sparkles, Film, ArrowRight } from 'lucide-react';
 
 export default function PortfolioGrid({ onOpenEstimate }) {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -198,6 +199,18 @@ export default function PortfolioGrid({ onOpenEstimate }) {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Link to Full Gallery with Photos & Videos */}
+        <div className="mt-12 text-center">
+          <Link
+            to="/gallery"
+            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white/5 hover:bg-[#CBB890] text-white hover:text-[#000D13] font-bold text-xs uppercase tracking-wider border border-white/15 hover:border-[#CBB890] transition-all shadow-md group"
+          >
+            <Film className="w-4 h-4 text-[#CBB890] group-hover:text-[#000D13] transition-colors" />
+            <span>Explore Complete Gallery & Video Tours (185+ Works)</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </div>
     </section>

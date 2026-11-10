@@ -10,6 +10,9 @@ import {
   Maximize2,
   CheckCircle2,
   Filter,
+  Play,
+  Film,
+  VolumeX,
 } from 'lucide-react';
 import { galleryCategories, galleryItems } from '../data/galleryData';
 import { scrollToEstimate } from '../utils/scroll';
@@ -24,6 +27,7 @@ export default function GalleryPage() {
   // Filter items based on active category
   const filteredItems = useMemo(() => {
     if (selectedCategory === 'all') return galleryItems;
+    if (selectedCategory === 'videos') return galleryItems.filter((item) => item.mediaType === 'video');
     return galleryItems.filter((item) => item.category === selectedCategory);
   }, [selectedCategory]);
 
@@ -31,7 +35,9 @@ export default function GalleryPage() {
   const categoryCounts = useMemo(() => {
     const counts = { all: galleryItems.length };
     galleryCategories.forEach((cat) => {
-      if (cat.id !== 'all') {
+      if (cat.id === 'videos') {
+        counts[cat.id] = galleryItems.filter((item) => item.mediaType === 'video').length;
+      } else if (cat.id !== 'all') {
         counts[cat.id] = galleryItems.filter((item) => item.category === cat.id).length;
       }
     });
@@ -152,14 +158,14 @@ export default function GalleryPage() {
         {/* Count Bar */}
         <div className="flex items-center justify-between mb-5 pb-2.5 border-b border-black/10">
           <div className="text-xs sm:text-sm text-neutral-600 font-medium">
-            Showing <strong className="text-[#000D13]">{filteredItems.length}</strong> photos
+            Showing <strong className="text-[#000D13]">{filteredItems.length}</strong> {selectedCategory === 'videos' ? 'video walkthroughs' : 'verified works'}
           </div>
           <div className="text-xs text-neutral-500 hidden sm:block">
-            Tap any photo to view full screen
+            Tap any item to view full screen
           </div>
         </div>
 
-        {/* Responsive Pure-Photo Grid - NO GREY OVERLAYS */}
+        {/* Responsive Pure-Photo & Video Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3.5">
           {filteredItems.map((item, index) => (
             <div
@@ -174,10 +180,25 @@ export default function GalleryPage() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
-              {/* Minimal Subtle Expand Indicator on Hover/Tap (never covers photo with grey) */}
-              <div className="absolute top-2 right-2 p-1.5 rounded-full bg-black/50 text-white/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                <Maximize2 className="w-3.5 h-3.5" />
-              </div>
+              {/* Video Play Indicator Overlay */}
+              {item.mediaType === 'video' && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#000D13]/80 border border-[#CBB890] text-[#CBB890] flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-[#CBB890] group-hover:text-[#000D13] transition-all">
+                    <Play className="w-5 h-5 fill-current translate-x-0.5" />
+                  </div>
+                  <div className="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-black/75 backdrop-blur-sm border border-white/10 text-[10px] text-white font-mono flex items-center gap-1">
+                    <Film className="w-3 h-3 text-[#CBB890]" />
+                    <span>{item.duration ? `${Math.floor(item.duration / 60)}:${String(Math.floor(item.duration % 60)).padStart(2, '0')}` : 'Tour'}</span>
+                  </div>
+                </div>
+              )}
+
+              {/* Minimal Subtle Expand Indicator on Hover/Tap */}
+              {item.mediaType !== 'video' && (
+                <div className="absolute top-2 right-2 p-1.5 rounded-full bg-black/50 text-white/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <Maximize2 className="w-3.5 h-3.5" />
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -200,6 +221,12 @@ export default function GalleryPage() {
               <span className="text-[11px] uppercase tracking-wider font-bold px-2.5 py-0.5 rounded-full bg-[#CBB890]/20 text-[#CBB890] border border-[#CBB890]/30">
                 {currentItem.category}
               </span>
+              {currentItem.mediaType === 'video' && (
+                <span className="text-[11px] uppercase tracking-wider font-bold px-2.5 py-0.5 rounded-full bg-red-500/20 text-red-300 border border-red-500/30 flex items-center gap-1">
+                  <Film className="w-3 h-3" />
+                  <span>Video Tour</span>
+                </span>
+              )}
             </div>
 
             <button
@@ -225,13 +252,32 @@ export default function GalleryPage() {
               <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
             </button>
 
-            {/* Current Image */}
-            <div className="max-w-6xl max-h-[75vh] sm:max-h-[82vh] flex items-center justify-center">
-              <img
-                src={currentItem.src}
-                alt={currentItem.title}
-                className="max-w-full max-h-[75vh] sm:max-h-[82vh] object-contain rounded-lg shadow-2xl transition-all duration-300"
-              />
+            {/* Current Media: Video or Photo */}
+            <div className="max-w-6xl max-h-[75vh] sm:max-h-[82vh] flex flex-col items-center justify-center">
+              {currentItem.mediaType === 'video' ? (
+                <div className="relative flex flex-col items-center max-h-[75vh] sm:max-h-[80vh]">
+                  <video
+                    key={currentItem.videoSrc}
+                    src={currentItem.videoSrc}
+                    poster={currentItem.src}
+                    controls
+                    autoPlay
+                    muted
+                    playsInline
+                    className="max-w-full max-h-[68vh] sm:max-h-[74vh] rounded-lg shadow-2xl object-contain bg-black"
+                  />
+                  <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/70 border border-white/10 text-[11px] text-white/70">
+                    <VolumeX className="w-3.5 h-3.5 text-[#CBB890]" />
+                    <span>Vídeo sem áudio · Silent Project Walkthrough</span>
+                  </div>
+                </div>
+              ) : (
+                <img
+                  src={currentItem.src}
+                  alt={currentItem.title}
+                  className="max-w-full max-h-[75vh] sm:max-h-[82vh] object-contain rounded-lg shadow-2xl transition-all duration-300"
+                />
+              )}
             </div>
 
             {/* Next Button */}
