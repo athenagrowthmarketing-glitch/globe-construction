@@ -23,7 +23,7 @@ import {
 
 const RECAPTCHA_SITE_KEY = '6LfOpRctAAAAAOJmBcplr60CA0G3y-BnVhXrrFE-';
 const LEADCONNECTOR_WEBHOOK =
-  'https://services.leadconnectorhq.com/hooks/wr9YVe8FDcTksUup9qpu/webhook-trigger/b275afc3-b423-4388-b0d2-4dff3850cbcc';
+  'https://services.leadconnectorhq.com/hooks/wr9YVe8FDcTksUup9qpu/webhook-trigger/b55f6645-dfb3-4256-8906-0ff40c6e00dd';
 
 export default function LinksPage() {
   const [isEstimateModalOpen, setIsEstimateModalOpen] = useState(false);

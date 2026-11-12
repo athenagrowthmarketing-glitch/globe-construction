@@ -82,7 +82,7 @@ export default function EstimateSection({ defaultService = 'Kitchen Remodeling' 
       };
 
       // 1. Direct Webhook to LeadConnector / GoHighLevel
-      const webhookUrl = 'https://services.leadconnectorhq.com/hooks/wr9YVe8FDcTksUup9qpu/webhook-trigger/b275afc3-b423-4388-b0d2-4dff3850cbcc';
+      const webhookUrl = 'https://services.leadconnectorhq.com/hooks/wr9YVe8FDcTksUup9qpu/webhook-trigger/b55f6645-dfb3-4256-8906-0ff40c6e00dd';
       try {
         fetch(webhookUrl, {
           method: 'POST',

@@ -70,7 +70,7 @@ export default async function handler(req, res) {
     console.log('[LEAD RECEIVED]', leadData);
 
     // Forward lead directly to LeadConnector / GoHighLevel Webhook
-    const webhookUrl = 'https://services.leadconnectorhq.com/hooks/wr9YVe8FDcTksUup9qpu/webhook-trigger/b275afc3-b423-4388-b0d2-4dff3850cbcc';
+    const webhookUrl = 'https://services.leadconnectorhq.com/hooks/wr9YVe8FDcTksUup9qpu/webhook-trigger/b55f6645-dfb3-4256-8906-0ff40c6e00dd';
     try {
       await fetch(webhookUrl, {
         method: 'POST',
